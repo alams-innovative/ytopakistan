@@ -53,6 +53,21 @@ export default function Certificate() {
                   <div itemProp="name">Certificates</div>
                 </div>
                 
+                <div className="protitle">YTO Certificate</div>
+                <div className="etw_photo etw_pic5 etw_shadowpic">
+                  <ul>
+                    <li>
+                      <figure>
+                        <a onClick={() => setSelectedImage('/images/YRO-certificate_page-0001.jpg')} style={{ cursor: 'pointer' }}>
+                          <img src="/images/YRO-certificate_page-0001.jpg" alt="YTO Certificate" />
+                        </a>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="clearfix"></div>
+                
                 <div className="protitle">Enterprise Certifications</div>
                 <div className="etw_photo etw_pic5 etw_shadowpic">
                   <ul>
