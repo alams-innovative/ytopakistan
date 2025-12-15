@@ -52,13 +52,39 @@ export default function History() {
                 <ul className="history text_item text_item1 my-4">
                   <li>
                     <ol className="align-items-start">
-                      <li className="pro_img"><span>1955-1980 </span></li>
-                      <li className="pro_txt"><span>YTO's story began</span>
+                      <li className="pro_img"><span>2025</span></li>
+                      <li className="pro_txt"><span>Establishment of YTO Pakistan</span>
                         <ul className="item">
-                          <li>1955 The opening ceremony of the First Tractor Factory was held.</li>
-                          <li>1958 The first crawler tractor in China was built based on the advanced technology introduced from the former Soviet Union.</li>
-                          <li>1959 The crawler tractor was put into production.</li>
-                          <li>1980 The annual output of crawler tractors reached 24,000.</li>
+                          <li>YTO officially expanded its presence into Pakistan in 2025.</li>
+                          <li>YTO Pakistan was established to introduce globally trusted agricultural tractors to the local market.</li>
+                          <li>The expansion marks a strategic milestone for YTO in South Asia.</li>
+                          <li>Focus on providing reliable, efficient, and technologically advanced tractors and farming equipment.</li>
+                          <li>Products are tailored to meet the diverse farming conditions across Pakistan.</li>
+                          <li>Emphasis on productivity, durability, and fuel efficiency for farmers and agribusinesses.</li>
+                          <li>YTO Pakistan offers a comprehensive support ecosystem, including technical guidance and after-sales service.</li>
+                          <li>Ensures availability of spare parts and localized maintenance solutions.</li>
+                          <li>Combines global manufacturing expertise with insights into the local agricultural market.</li>
+                          <li>Aims to empower farmers, contractors, and agribusinesses with modern machinery.</li>
+                          <li>Supports Pakistan's agricultural modernization, mechanization, and food security goals.</li>
+                          <li>Represents a new phase of regional growth, reinforcing YTO's mission to deliver dependable agricultural solutions and foster strong partnerships in Pakistan.</li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </li>
+                  
+                  <li>
+                    <ol className="align-items-start">
+                      <li className="pro_img"><span>From 2008</span></li>
+                      <li className="pro_txt"><span>YTO aims higher</span>
+                        <ul className="item mt-2">
+                          <li>April, 2009 YTO and China-Africa Development Fund signed a comprehensive cooperation frame agreement to found China-Africa Machinery Corporation.</li>
+                          <li>2010 The first tractor with power shift transmission in China was invented by YTO.</li>
+                          <li>2012 YTO began to issue A shares on the Shanghai Stock Exchange.</li>
+                          <li>2018 Driverless tractors passed the first round of driverless operation tests in China.</li>
+                          <li>2019 YTO led the establishment of National Agricultural Equipment Innovation Center which obtained the approval of the Ministry of Industry and Information Technology.</li>
+                          <li>2019 YTO International continued to improve the overseas business as it developed the mode of "international trade + overseas marketing + overseas services" by establishing the overseas management system and innovating marketing patterns.</li>
+                          <li>2020 The first cab-less tractor driven by hydrogen energy and equipped with 5G technology in China was developed by YTO; Dongfanghong (Luoyang) International Land Port undertaken by YTO Group Corporation (YTO) was included in the list of National Logistics Hub Construction.</li>
+                          <li>2021 320HP CVT tractors developed by YTO was put on the market; fully autonomous "driverless" solutions on staple food crop production provided by YTO got on the list of China's Top 10 Scientific Achievements of Intelligent Manufacturing in 2021; YTO won the nomination of China's Quality Awards.</li>
                         </ul>
                       </li>
                     </ol>
@@ -85,17 +111,13 @@ export default function History() {
                   
                   <li>
                     <ol className="align-items-start">
-                      <li className="pro_img"><span>From 2008</span></li>
-                      <li className="pro_txt"><span>YTO aims higher</span>
-                        <ul className="item mt-2">
-                          <li>April, 2009 YTO and China-Africa Development Fund signed a comprehensive cooperation frame agreement to found China-Africa Machinery Corporation.</li>
-                          <li>2010 The first tractor with power shift transmission in China was invented by YTO.</li>
-                          <li>2012 YTO began to issue A shares on the Shanghai Stock Exchange.</li>
-                          <li>2018 Driverless tractors passed the first round of driverless operation tests in China.</li>
-                          <li>2019 YTO led the establishment of National Agricultural Equipment Innovation Center which obtained the approval of the Ministry of Industry and Information Technology.</li>
-                          <li>2019 YTO International continued to improve the overseas business as it developed the mode of "international trade + overseas marketing + overseas services" by establishing the overseas management system and innovating marketing patterns.</li>
-                          <li>2020 The first cab-less tractor driven by hydrogen energy and equipped with 5G technology in China was developed by YTO; Dongfanghong (Luoyang) International Land Port undertaken by YTO Group Corporation (YTO) was included in the list of National Logistics Hub Construction.</li>
-                          <li>2021 320HP CVT tractors developed by YTO was put on the market; fully autonomous "driverless" solutions on staple food crop production provided by YTO got on the list of China's Top 10 Scientific Achievements of Intelligent Manufacturing in 2021; YTO won the nomination of China's Quality Awards.</li>
+                      <li className="pro_img"><span>1955-1980 </span></li>
+                      <li className="pro_txt"><span>YTO's story began</span>
+                        <ul className="item">
+                          <li>1955 The opening ceremony of the First Tractor Factory was held.</li>
+                          <li>1958 The first crawler tractor in China was built based on the advanced technology introduced from the former Soviet Union.</li>
+                          <li>1959 The crawler tractor was put into production.</li>
+                          <li>1980 The annual output of crawler tractors reached 24,000.</li>
                         </ul>
                       </li>
                     </ol>
