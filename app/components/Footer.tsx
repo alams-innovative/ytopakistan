@@ -13,8 +13,8 @@ export default function Footer() {
                   16 km, Multan Road, Pakka Mile Stop,<br />
                   Shahpur, Lahore Pakistan</p>
                   <p><strong>Email:</strong><br />
-                  <a href="mailto:info@ptmc.com">info@ptmc.com</a><br />
-                  <a href="mailto:Sales@ptmc.com">Sales@ptmc.com</a></p>
+                  <a href="mailto:info@ptmc.com.pk">info@ptmc.com.pk</a><br />
+                  <a href="mailto:Sales@ptmc.com.pk">Sales@ptmc.com.pk</a></p>
                   <p><strong>Phone:</strong><br />
                   <a href="tel:92-42-37512567-8">92-42-37512567-8</a></p>
                   <p><strong>WhatsApp:</strong><br />
@@ -74,6 +74,11 @@ export default function Footer() {
             <a href="/service">Service & Support</a>
             <a href="/video">Videos</a>
             <a href="/contact">Contact</a>
+          </div>
+          <div className="content" style={{ textAlign: 'center', paddingTop: '1rem', borderTop: '1px solid #e0e0e0', marginTop: '1rem' }}>
+            <p style={{ margin: 0, color: '#666', fontSize: '0.9rem' }}>
+              Digital growth by <a href="https://alamsinnovate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#0075c2', textDecoration: 'none' }}>Alams Innovate</a>
+            </p>
           </div>
         </div>
       </div>

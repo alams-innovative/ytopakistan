@@ -37,8 +37,8 @@ export default function Contact() {
         <div className="clearfix"></div>
         
         <div className="content content_white">
-          <p>YTO International, Ltd., a subsidiary of the YTO Group, dealing with international business exclusively, has extended the business in more than 100 countries/regions, and has established fixed and friendly cooperation with several hundreds of world famous companies. The YTO Group has four pillar products, namely agricultural equipment, construction machinery, vehicles and power machinery. The YTO undertakes extensive international cooperation, including trades, labor export, OEM and BOT. Now the company has established overseas service centers, branches, assembly factories, and spare parts centers in Asia, Africa, America and Europe. Our worldwide network is ready to provide high-quality products and perfect service.</p>
-          <p className="mb-4">YTO International, Ltd. would like to warmly welcome customers from all over the world with sincerity and efficient service for the best future of both sides.</p>
+          <p>YTO Pakistan is the official local presence of YTO Co, Ltd. Delivering advanced agricultural Tractors to the Pakistani market with a strong focus on reliability, performance, and long-term customer support. YTO International, Ltd., a subsidiary of the YTO Group, has established a strong presence in Pakistan, providing high-quality agricultural machinery and equipment to farmers and businesses across the country. The YTO Group offers four pillar products: agricultural equipment, construction machinery, vehicles, and power machinery. With our local office in Lahore, we are committed to serving the Pakistani market with world-class products and comprehensive after-sales support.</p>
+          <p className="mb-4">YTO Pakistan warmly welcomes customers from across Pakistan with sincerity and efficient service. We are dedicated to supporting the agricultural sector in Pakistan with reliable machinery and excellent customer service for a prosperous future.</p>
           
           <div className="clearfix"></div>
           
@@ -47,16 +47,20 @@ export default function Contact() {
               <tbody>
                 <tr>
                   <td colSpan={3}>
-                    <p className="mb-0"><strong>YTO International, Ltd.</strong></p>
+                    <p className="mb-0"><strong>YTO Pakistan - Official Local Presence</strong></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colSpan={3}>Address: 16 km, Multan Road, Pakka Mile Stop, Shahpur, Lahore Pakistan</td>
+                  <td colSpan={3}>Address: 16 km, Multan Road, Pakka Mile Stop, Shahpur, Lahore, Pakistan</td>
                 </tr>
                 <tr>
-                  <td>Office in Pakistan</td>
+                  <td>YTO Pakistan Office</td>
                   <td>Tel.:<a href="tel:+92-42-37512567-8">92-42-37512567-8</a></td>
-                  <td>Email:<a href="mailto:info@ptmc.com.pk">info@ptmc.com.pk</a>, <a href="mailto:sales@ptmc.com.pk">sales@ptmc.com.pk</a></td>
+                  <td>Email:<a href="mailto:info@ptmc.com.pk">info@ptmc.com.pk</a>, <a href="mailto:Sales@ptmc.com.pk">Sales@ptmc.com.pk</a></td>
+                </tr>
+                <tr>
+                  <td>WhatsApp</td>
+                  <td colSpan={2}><a href="https://wa.me/923026612010" target="_blank" rel="noopener noreferrer">+92 302 6612010</a></td>
                 </tr>
               </tbody>
             </table>
