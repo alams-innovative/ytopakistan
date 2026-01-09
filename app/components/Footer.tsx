@@ -7,7 +7,9 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 col-lg-4">
               <div className="bottom_logo">
-                <img src="/images/yto-pakistan-logo.png" alt="YTO Pakistan" style={{ maxWidth: '200px', height: 'auto', marginBottom: '1.5rem' }} />
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <img src="/logo2.png" alt="PTMC" style={{ maxHeight: '120px', width: 'auto', marginBottom: '1rem' }} />
+                </div>
                 <div className="contact_info">
                   <p><strong>Address:</strong><br />
                   16 km, Multan Road, Pakka Mile Stop,<br />

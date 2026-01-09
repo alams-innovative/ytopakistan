@@ -58,29 +58,92 @@ export default function TractorsPage() {
                 <ul>
                   <li>
                     <ol>
-                      <li className="product_img"><a href="/yto-ex1054"><img src="/tractors/yto-ex1054/YTO-EX1054.jpg" alt="YTO-EX1054 Wheeled Tractor" /></a></li>
-                      <li className="product_con"><a href="/yto-ex1054">YTO-EX1054 Wheeled Tractor</a>
-                        <span>YTO Engine and fuel pump with engine torque reserve reaching 30%, the power is strong, high fuel injection pressure, good atomization performance, sufficient combustion, and low fuel consumption.</span>
+                      <li className="product_img"><a href="/yto-esk550"><img src="/tractors/yto-esk550/YTO-ESK550.jpg" alt="YTO-ESK550 Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-esk550">YTO-ESK550 Wheeled Tractor</a>
+                        <span>YTO Engine and fuel pump with engine torque reserve reaching 30%, the power is strong, high fuel injection pressure, good atomization performance, sufficient combustion, and low fuel consumption. 55hp power with 12F+4R transmission.</span>
                       </li>
-                      <div className="more2"><a href="/yto-ex1054">Read More</a></div>
+                      <div className="more2"><a href="/yto-esk550">Read More</a></div>
                     </ol>
                   </li>
                   <li>
                     <ol>
-                      <li className="product_img"><a href="/yto-ex1404"><img src="/tractors/yto-ex1404/YTO-EX1404.jpg" alt="YTO-EX1404 Wheeled Tractor" /></a></li>
-                      <li className="product_con"><a href="/yto-ex1404">YTO-EX1404 Wheeled Tractor</a>
-                        <span>YTO Engine and fuel pump with engine torque reserve reaching 30%, the power is strong, high fuel injection pressure, good atomization performance, sufficient combustion, and low fuel consumption. Transmission dissipation system included.</span>
+                      <li className="product_img"><a href="/yto-ef804"><img src="/tractors/yto-ef804/YTO-EF804.jpg" alt="YTO-EF804 Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-ef804">YTO-EF804 Wheeled Tractor</a>
+                        <span>YTO Engine and fuel pump with engine torque reserve reaching 30%, the power is strong, high fuel injection pressure, good atomization performance, sufficient combustion, and low fuel consumption. 80hp power with 12F+4R transmission.</span>
                       </li>
-                      <div className="more2"><a href="/yto-ex1404">Read More</a></div>
+                      <div className="more2"><a href="/yto-ef804">Read More</a></div>
                     </ol>
                   </li>
                   <li>
                     <ol>
-                      <li className="product_img"><a href="/yto-nlx1604"><img src="/tractors/yto-nlx1604/YTO-NLX1604.jpg" alt="YTO-NLX1604 Wheeled Tractor" /></a></li>
-                      <li className="product_con"><a href="/yto-nlx1604">YTO-NLX1604 Wheeled Tractor</a>
-                        <span>YTO Engine and fuel pump with engine torque reserve reaching 30%, the power is strong. 24F+8R more gearshifts, 38km/h high speed gearbox. Individual hydraulic and transmission oil structure.</span>
+                      <li className="product_img"><a href="/yto-ex1054-cabin"><img src="/tractors/yto-ex1054-cabin/YTO-EX1054-Cabin.jpg" alt="YTO-EX1054 Cabin Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-ex1054-cabin">YTO-EX1054 Cabin Wheeled Tractor</a>
+                        <span>Fully enclosed cabin with climate control, sound insulation, and ergonomic design. YTO Engine with 105hp power, 12F+4R transmission.</span>
                       </li>
-                      <div className="more2"><a href="/yto-nlx1604">Read More</a></div>
+                      <div className="more2"><a href="/yto-ex1054-cabin">Read More</a></div>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li className="product_img"><a href="/yto-ex1054-canopy"><img src="/tractors/yto-ex1054-canopy/YTO-EX1054-Canopy.jpg" alt="YTO-EX1054 Canopy Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-ex1054-canopy">YTO-EX1054 Canopy Wheeled Tractor</a>
+                        <span>Weather-resistant protective canopy providing shade and protection. YTO Engine with 105hp power, 12F+4R transmission.</span>
+                      </li>
+                      <div className="more2"><a href="/yto-ex1054-canopy">Read More</a></div>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li className="product_img"><a href="/yto-x1204-cabin"><img src="/tractors/yto-x1204-cabin/YTO-X1204-Cabin.jpg" alt="YTO-X1204 Cabin Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-x1204-cabin">YTO-X1204 Cabin Wheeled Tractor</a>
+                        <span>Fully enclosed cabin with climate control, sound insulation, and ergonomic design. YTO Engine with 120hp power, 12F+4R transmission.</span>
+                      </li>
+                      <div className="more2"><a href="/yto-x1204-cabin">Read More</a></div>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li className="product_img"><a href="/yto-x1204-canopy"><img src="/tractors/yto-x1204-canopy/YTO-X1204-Canopy.jpg" alt="YTO-X1204 Canopy Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-x1204-canopy">YTO-X1204 Canopy Wheeled Tractor</a>
+                        <span>Weather-resistant protective canopy providing shade and protection. YTO Engine with 120hp power, 12F+4R transmission.</span>
+                      </li>
+                      <div className="more2"><a href="/yto-x1204-canopy">Read More</a></div>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li className="product_img"><a href="/yto-ex1254-cabin"><img src="/tractors/yto-ex1254-cabin/YTO-EX1254-Cabin.jpg" alt="YTO-EX1254 Cabin Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-ex1254-cabin">YTO-EX1254 Cabin Wheeled Tractor</a>
+                        <span>Fully enclosed cabin with climate control, sound insulation, and ergonomic design. YTO Engine with 125hp power, 12F+4R transmission.</span>
+                      </li>
+                      <div className="more2"><a href="/yto-ex1254-cabin">Read More</a></div>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li className="product_img"><a href="/yto-ex1254-canopy"><img src="/tractors/yto-ex1254-canopy/YTO-EX1254-Canopy.jpg" alt="YTO-EX1254 Canopy Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-ex1254-canopy">YTO-EX1254 Canopy Wheeled Tractor</a>
+                        <span>Weather-resistant protective canopy providing shade and protection. YTO Engine with 125hp power, 12F+4R transmission.</span>
+                      </li>
+                      <div className="more2"><a href="/yto-ex1254-canopy">Read More</a></div>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li className="product_img"><a href="/yto-ex1404-cabin"><img src="/tractors/yto-ex1404-cabin/YTO-EX1404-Cabin.jpg" alt="YTO-EX1404 Cabin Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-ex1404-cabin">YTO-EX1404 Cabin Wheeled Tractor</a>
+                        <span>Fully enclosed cabin with climate control, sound insulation, and ergonomic design. YTO Engine with 140hp power, 12F+4R transmission.</span>
+                      </li>
+                      <div className="more2"><a href="/yto-ex1404-cabin">Read More</a></div>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li className="product_img"><a href="/yto-ex1404-canopy"><img src="/tractors/yto-ex1404-canopy/YTO-EX1404-Canopy.jpg" alt="YTO-EX1404 Canopy Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-ex1404-canopy">YTO-EX1404 Canopy Wheeled Tractor</a>
+                        <span>Weather-resistant protective canopy providing shade and protection. YTO Engine with 140hp power, 12F+4R transmission.</span>
+                      </li>
+                      <div className="more2"><a href="/yto-ex1404-canopy">Read More</a></div>
                     </ol>
                   </li>
                   <li>
@@ -94,11 +157,11 @@ export default function TractorsPage() {
                   </li>
                   <li>
                     <ol>
-                      <li className="product_img"><a href="/yto-elx2404"><img src="/tractors/yto-elx2404/YTO-ELX2404.jpg" alt="YTO-ELX2404 Wheeled Tractor" /></a></li>
-                      <li className="product_con"><a href="/yto-elx2404">YTO-ELX2404 Wheeled Tractor</a>
-                        <span>Shangchai Engine with British Riccardo technology, engine reserve power reaches 30%, and the power is strong. 3-stage emission standard engine, turbocharged inter-cooled and high-pressure common rail engine with 240hp power.</span>
+                      <li className="product_img"><a href="/yto-nlx1604-cabin"><img src="/tractors/yto-nlx1604-cabin/YTO-NLX1604-Cabin.jpg" alt="YTO-NLX1604 Cabin Wheeled Tractor" /></a></li>
+                      <li className="product_con"><a href="/yto-nlx1604-cabin">YTO-NLX1604 Cabin Wheeled Tractor</a>
+                        <span>Fully enclosed cabin with climate control, sound insulation, and ergonomic design. YTO Engine with 160hp power, 24F+8R transmission.</span>
                       </li>
-                      <div className="more2"><a href="/yto-elx2404">Read More</a></div>
+                      <div className="more2"><a href="/yto-nlx1604-cabin">Read More</a></div>
                     </ol>
                   </li>
                 </ul>

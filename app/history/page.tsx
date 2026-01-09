@@ -56,7 +56,7 @@ export default function History() {
                       <li className="pro_txt"><span>Establishment of YTO Pakistan</span>
                         <ul className="item">
                           <li>YTO officially expanded its presence into Pakistan in 2025.</li>
-                          <li>YTO Pakistan was established to introduce globally trusted agricultural tractors to the local market.</li>
+                          <li>YTO appoints PTMC as its authorized distributor in Pakistan.</li>
                           <li>The expansion marks a strategic milestone for YTO in South Asia.</li>
                           <li>Focus on providing reliable, efficient, and technologically advanced tractors and farming equipment.</li>
                           <li>Products are tailored to meet the diverse farming conditions across Pakistan.</li>

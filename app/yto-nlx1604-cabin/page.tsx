@@ -13,15 +13,15 @@ export default function TractorDetail() {
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
 
   useEffect(() => {
-    document.title = 'YTO-NLX1604 | Agricultural Tractor | YTO';
+    document.title = 'YTO-NLX1604 Cabin | Agricultural Tractor | YTO';
     const metaDescription = document.querySelector('meta[name="description"]');
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     
     if (metaDescription) {
-      metaDescription.setAttribute('content', "YTO-NLX1604 wheeled tractor with 160hp power, YTO engine, 24F+8R transmission.");
+      metaDescription.setAttribute('content', "YTO-NLX1604 Cabin wheeled tractor with 160hp power, YTO engine, 24F+8R transmission, fully enclosed cabin.");
     }
     if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'YTO-NLX1604, Agricultural Tractor, YTO, Wheeled Tractor');
+      metaKeywords.setAttribute('content', 'YTO-NLX1604 Cabin, Agricultural Tractor, YTO, Wheeled Tractor');
     }
   }, []);
 
@@ -38,7 +38,7 @@ export default function TractorDetail() {
               <li><a href="/">Home</a></li>
               <li><a href="/products">Products</a></li>
               <li><a href="/5-tractors">Tractors</a></li>
-              <li>YTO-NLX1604</li>
+              <li>YTO-NLX1604 Cabin</li>
             </ul>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function TractorDetail() {
         <div className="content content_white d-md-flex">
           <ProductSidebar 
             activeCategory="tractors" 
-            activeProduct="yto-nlx1604" 
+            activeProduct="yto-nlx1604-cabin" 
           />
           
           <div id="etw_right">
@@ -56,15 +56,15 @@ export default function TractorDetail() {
               <div itemScope itemType="http://data-vocabulary.org/Product">
                 <div itemProp="description">
                   <div>
-                    <h2 itemProp="name" className="d-block d-md-none small_h2">YTO-NLX1604 WHEELED TRACTOR</h2>
+                    <h2 itemProp="name" className="d-block d-md-none small_h2">YTO-NLX1604 Cabin WHEELED TRACTOR</h2>
                     
                     <div className="row mb-3">
                       <div className="col-12 col-md-5">
                         <div className="left_pic">
                           <div className="left_pics">
                             <figure>
-                              <a href="#" onClick={(e) => { e.preventDefault(); setSelectedImage('/tractors/yto-nlx1604/YTO-NLX1604.jpg'); }}>
-                                <img itemProp="image" src="/tractors/yto-nlx1604/YTO-NLX1604.jpg" alt="YTO-NLX1604 Wheeled Tractor" />
+                              <a href="#" onClick={(e) => { e.preventDefault(); setSelectedImage('/tractors/yto-nlx1604-cabin/YTO-NLX1604-Cabin.jpg'); }}>
+                                <img itemProp="image" src="/tractors/yto-nlx1604-cabin/YTO-NLX1604-Cabin.jpg" alt="YTO-NLX1604 Cabin Wheeled Tractor" />
                               </a>
                             </figure>
                           </div>
@@ -78,11 +78,12 @@ export default function TractorDetail() {
                       </div>
                       
                       <div className="col-12 col-md-7">
-                        <h2 className="d-none d-md-block small_h2">YTO-NLX1604 WHEELED TRACTOR</h2>
+                        <h2 className="d-none d-md-block small_h2">YTO-NLX1604 CABIN WHEELED TRACTOR</h2>
                         <div className="clearfix"></div>
                         <div className="etw_title1">Main Characteristics</div>
                         <div className="clearfix"></div>
                         <ul className="item">
+                          <li><strong>Fully Enclosed Cabin:</strong> Comfortable and weather-protected operator environment with climate control, sound insulation, and ergonomic design for extended operation;</li>
                           <li><strong>YTO Engine and fuel pump:</strong> The engine torque reserve reaches 30%, the power is strong, high fuel injection pressure, good atomization performance, sufficient combustion, and low fuel consumption;</li>
                           <li><strong>Air prefilter (desert air filter):</strong> Automatic dust removal, no need for cleaning, free daily maintenance;</li>
                           <li><strong>Independent double-acting clutch:</strong> LUK brand, independent control Driving and PTO;</li>
@@ -103,13 +104,13 @@ export default function TractorDetail() {
                   <div className="content_txt1">
                     <div className="row">
                       <div className="col-12">
-                          <div className="etw_title1">Technical Specifications List — YTO-NLX1604</div>
+                          <div className="etw_title1">Technical Specifications List — YTO-NLX1604 Cabin</div>
                           <div className="table-responsive mb-2">
                             <table className="table table-hover table-striped ke-zeroborder tables">
                               <tbody>
                                 <tr className="top">
                                   <td><strong>Model</strong></td>
-                                  <td>YTO-NLX1604</td>
+                                  <td>YTO-NLX1604 Cabin</td>
                                 </tr>
                                 <tr>
                                   <td>Engine</td>
@@ -221,11 +222,11 @@ export default function TractorDetail() {
                                 </tr>
                                 <tr>
                                   <td>Overall sizes (L*W*H)</td>
-                                  <td>5050*2370*3200mm</td>
+                                  <td>5050*2370*3400mm (with cabin)</td>
                                 </tr>
                                 <tr>
                                   <td>Net weight</td>
-                                  <td>6000kg</td>
+                                  <td>6300kg (with cabin)</td>
                                 </tr>
                                 <tr>
                                   <td>Rated traction force</td>
@@ -260,6 +261,10 @@ export default function TractorDetail() {
                                   <td>Oil bath, disc type</td>
                                 </tr>
                                 <tr>
+                                  <td>Cabin Features</td>
+                                  <td>Fully enclosed cabin with climate control, sound insulation, ergonomic seating, and enhanced visibility</td>
+                                </tr>
+                                <tr>
                                   <td>Gauge / safeties</td>
                                   <td>Water temperature gauge, turn single lamp, fuel gauge, Brake light indicator, high beam indicator, charging indicator, low beam indicator, hour meter, oil pressure warning indicator, low pressure warning indicator, rear work light indicator, water temperature indicator</td>
                                 </tr>
@@ -287,14 +292,14 @@ export default function TractorDetail() {
                             <li><a href="/yto-x1204">YTO-X1204</a></li>
                             <li><a href="/yto-ex1254">YTO-EX1254</a></li>
                             <li><a href="/yto-ex1404">YTO-EX1404</a></li>
-                            <li><a href="/yto-nlx1604">YTO-NLX1604</a></li>
+                            <li><a href="/yto-nlx1604">YTO-NLX1604 Cabin</a></li>
                             <li><a href="/yto-e2004">YTO-E2004</a></li>
                             <li><a href="/yto-elx2404">YTO-ELX2404</a></li>
                           </ul>
                         </div>
                         <div className="clearfix"></div>
                         
-                        <ContactForm productName="YTO-NLX1604" showTitle={true} />
+                        <ContactForm productName="YTO-NLX1604 Cabin" showTitle={true} />
                         <div className="clearfix"></div>
                     <div className="clearfix"></div>
                       </div>
@@ -314,13 +319,13 @@ export default function TractorDetail() {
         isOpen={!!selectedImage}
         onClose={() => setSelectedImage(null)}
         imageUrl={selectedImage || ''}
-        alt="YTO-NLX1604 Tractor"
+        alt="YTO-NLX1604 Cabin Tractor"
       />
       
       <InquiryModal 
         isOpen={isInquiryOpen}
         onClose={() => setIsInquiryOpen(false)}
-        productName="YTO-NLX1604"
+        productName="YTO-NLX1604 Cabin"
       />
     </div>
   );

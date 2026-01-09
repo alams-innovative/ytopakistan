@@ -101,7 +101,7 @@ export default function TractorDetail() {
                   
                   <div className="content_txt1">
                     <div className="row">
-                      <div className="col-12 col-lg-9">
+                      <div className="col-12">
                           <div className="etw_title1">Technical Specifications List — YTO-EX1054</div>
                           <div className="table-responsive mb-2">
                             <table className="table table-hover table-striped ke-zeroborder tables">
@@ -276,20 +276,19 @@ export default function TractorDetail() {
                             <p className="mb-0">Fax: 92-42-37512569</p>
                           </div>
                         </div>
-                      <div className="col-12  col-lg-3">
-                        <ul className="contact_item">
-                          <li><a href="/contact"><img src="/images/email.jpg" alt="Visit and Contact Us" /> <span>Visit and Contact</span></a></li>
-                          <li className="video_btn"><a href="/video"><img src="/images/video.jpg" alt="Video" /> <span>Video</span></a></li>
-                        </ul>
-                      </div>
+                      
                         <div className="etw_title1">Related Products</div>
                         <div className="etw_related">
                           <ul>
-                            <li><a href="/yto-e2004">YTO-E2004</a></li>
-                            <li><a href="/yto-elx2404">YTO-ELX2404</a></li>
+                            <li><a href="/yto-esk550">YTO-ESK550</a></li>
+                            <li><a href="/yto-ef804">YTO-EF804</a></li>
                             <li><a href="/yto-ex1054">YTO-EX1054</a></li>
+                            <li><a href="/yto-x1204">YTO-X1204</a></li>
+                            <li><a href="/yto-ex1254">YTO-EX1254</a></li>
                             <li><a href="/yto-ex1404">YTO-EX1404</a></li>
                             <li><a href="/yto-nlx1604">YTO-NLX1604</a></li>
+                            <li><a href="/yto-e2004">YTO-E2004</a></li>
+                            <li><a href="/yto-elx2404">YTO-ELX2404</a></li>
                           </ul>
                         </div>
                         <div className="clearfix"></div>

@@ -13,15 +13,15 @@ export default function TractorDetail() {
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
 
   useEffect(() => {
-    document.title = 'YTO-NLX1604 | Agricultural Tractor | YTO';
+    document.title = 'YTO-EX1054 Canopy | Agricultural Tractor | YTO';
     const metaDescription = document.querySelector('meta[name="description"]');
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     
     if (metaDescription) {
-      metaDescription.setAttribute('content', "YTO-NLX1604 wheeled tractor with 160hp power, YTO engine, 24F+8R transmission.");
+      metaDescription.setAttribute('content', "YTO-EX1054 Canopy wheeled tractor with 105hp power, YTO engine, 12F+4R transmission, protective canopy.");
     }
     if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'YTO-NLX1604, Agricultural Tractor, YTO, Wheeled Tractor');
+      metaKeywords.setAttribute('content', 'YTO-EX1054 Canopy, Agricultural Tractor, YTO, Wheeled Tractor, Canopy Tractor');
     }
   }, []);
 
@@ -38,7 +38,7 @@ export default function TractorDetail() {
               <li><a href="/">Home</a></li>
               <li><a href="/products">Products</a></li>
               <li><a href="/5-tractors">Tractors</a></li>
-              <li>YTO-NLX1604</li>
+              <li>YTO-EX1054 Canopy</li>
             </ul>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function TractorDetail() {
         <div className="content content_white d-md-flex">
           <ProductSidebar 
             activeCategory="tractors" 
-            activeProduct="yto-nlx1604" 
+            activeProduct="yto-ex1054-canopy" 
           />
           
           <div id="etw_right">
@@ -56,15 +56,15 @@ export default function TractorDetail() {
               <div itemScope itemType="http://data-vocabulary.org/Product">
                 <div itemProp="description">
                   <div>
-                    <h2 itemProp="name" className="d-block d-md-none small_h2">YTO-NLX1604 WHEELED TRACTOR</h2>
+                    <h2 itemProp="name" className="d-block d-md-none small_h2">YTO-EX1054 CANOPY WHEELED TRACTOR</h2>
                     
                     <div className="row mb-3">
                       <div className="col-12 col-md-5">
                         <div className="left_pic">
                           <div className="left_pics">
                             <figure>
-                              <a href="#" onClick={(e) => { e.preventDefault(); setSelectedImage('/tractors/yto-nlx1604/YTO-NLX1604.jpg'); }}>
-                                <img itemProp="image" src="/tractors/yto-nlx1604/YTO-NLX1604.jpg" alt="YTO-NLX1604 Wheeled Tractor" />
+                              <a href="#" onClick={(e) => { e.preventDefault(); setSelectedImage('/tractors/yto-ex1054-canopy/YTO-EX1054-Canopy.jpg'); }}>
+                                <img itemProp="image" src="/tractors/yto-ex1054-canopy/YTO-EX1054-Canopy.jpg" alt="YTO-EX1054 Canopy Wheeled Tractor" />
                               </a>
                             </figure>
                           </div>
@@ -78,23 +78,23 @@ export default function TractorDetail() {
                       </div>
                       
                       <div className="col-12 col-md-7">
-                        <h2 className="d-none d-md-block small_h2">YTO-NLX1604 WHEELED TRACTOR</h2>
+                        <h2 className="d-none d-md-block small_h2">YTO-EX1054 CANOPY WHEELED TRACTOR</h2>
                         <div className="clearfix"></div>
                         <div className="etw_title1">Main Characteristics</div>
                         <div className="clearfix"></div>
                         <ul className="item">
+                          <li><strong>Protective Canopy:</strong> Weather-resistant canopy providing shade and protection from sun and rain, enhancing operator comfort during extended operations;</li>
                           <li><strong>YTO Engine and fuel pump:</strong> The engine torque reserve reaches 30%, the power is strong, high fuel injection pressure, good atomization performance, sufficient combustion, and low fuel consumption;</li>
+                          <li><strong>Second-order inertial force balance device:</strong> The vibration amplitude of the engine reduced by nearly 70%, with light vibration and small noise, and improve the stability and reliability of engine;</li>
                           <li><strong>Air prefilter (desert air filter):</strong> Automatic dust removal, no need for cleaning, free daily maintenance;</li>
                           <li><strong>Independent double-acting clutch:</strong> LUK brand, independent control Driving and PTO;</li>
                           <li><strong>The drivetrain system:</strong> adopts Italian technology, with reasonable structure and high transmission efficiency;</li>
-                          <li><strong>Transmission box:</strong> 24F+8R more gearshifts, 38km/h high speed gearbox;</li>
-                          <li><strong>Transmission dissipation:</strong> Control the working temperature of the lubricating oil in the drive train, greatly reducing the various mechanical and hydraulic failures caused by the high temperature of the drive train;</li>
                           <li><strong>Brake:</strong> Safe and reliable wet disc brake. With double circuit air brake controlling trailer braking;</li>
                           <li><strong>PTO:</strong> Power output can reach 540 and 1000r/min, capable of meeting different operational requirements;</li>
-                          <li><strong>The structure of individual hydraulic and transmission oil:</strong> Lifter and gearbox are lubricated separately to reduce lifter hydraulic failures;</li>
+                          <li><strong>The structure of mixed hydraulic and transmission oil:</strong> Mixed lubricating oil between lifter and gearbox, Good lubrication, and extend the service life of gearbox and lifter;</li>
                           <li><strong>Force-down Lifter:</strong> Force the depth in soil of the implements, improve the working efficiency and effect of tractors with implements, and more suitable for poor soil conditions;</li>
-                          <li><strong>Hydraulic output:</strong> 3 pairs hydraulic output (with 1 pair constant output + floating control + zero pressure hydraulic circuit) + European coupler;</li>
-                          <li><strong>Weight ballasts:</strong> With front 12pcs (600kg) and rear 4pcs (340kg) of weight ballasts.</li>
+                          <li><strong>Hydraulic output:</strong> 2-pair of hydraulic outputs with European connector, 3-pair as option;</li>
+                          <li><strong>Weight ballasts:</strong> With front 6pcs of weight ballasts.</li>
                         </ul>
                         <div className="clearfix"></div>
                       </div>
@@ -103,25 +103,25 @@ export default function TractorDetail() {
                   <div className="content_txt1">
                     <div className="row">
                       <div className="col-12">
-                          <div className="etw_title1">Technical Specifications List — YTO-NLX1604</div>
+                          <div className="etw_title1">Technical Specifications List — YTO-EX1054 Canopy</div>
                           <div className="table-responsive mb-2">
                             <table className="table table-hover table-striped ke-zeroborder tables">
                               <tbody>
                                 <tr className="top">
                                   <td><strong>Model</strong></td>
-                                  <td>YTO-NLX1604</td>
+                                  <td>YTO-EX1054 Canopy</td>
                                 </tr>
                                 <tr>
                                   <td>Engine</td>
-                                  <td>YTO LR6A3L-23</td>
+                                  <td>YTO LR4V5-23</td>
                                 </tr>
                                 <tr>
                                   <td>Air-inlet way</td>
-                                  <td>6-cylinder, water-cooling, Turbocharged inter-cooled, emission 2-stage</td>
+                                  <td>4-cylinder, water-cooling, naturally aspirated</td>
                                 </tr>
                                 <tr>
                                   <td>Rated housepower</td>
-                                  <td>160hp (118kW)</td>
+                                  <td>105hp (77.2kW)</td>
                                 </tr>
                                 <tr>
                                   <td>Engine rated rotation speed</td>
@@ -129,11 +129,11 @@ export default function TractorDetail() {
                                 </tr>
                                 <tr>
                                   <td>Torque (N.m)</td>
-                                  <td>612</td>
+                                  <td>401</td>
                                 </tr>
                                 <tr>
                                   <td>Engine bore x stroke (mm*mm)</td>
-                                  <td>105*125</td>
+                                  <td>115*135</td>
                                 </tr>
                                 <tr>
                                   <td>Compression ratio</td>
@@ -145,47 +145,47 @@ export default function TractorDetail() {
                                 </tr>
                                 <tr>
                                   <td>Fuel tank capacity</td>
-                                  <td>230L</td>
+                                  <td>115L</td>
                                 </tr>
                                 <tr>
                                   <td>Lube oil capacity (Engine) (L)</td>
-                                  <td>21</td>
+                                  <td>15</td>
                                 </tr>
                                 <tr>
                                   <td>Coolant capacity (L)</td>
-                                  <td>22</td>
+                                  <td>16</td>
                                 </tr>
                                 <tr>
                                   <td>Transmission oil capacity (L)</td>
-                                  <td>60</td>
+                                  <td>49.2</td>
                                 </tr>
                                 <tr>
                                   <td>Air pre cleaner oil capacity (L)</td>
-                                  <td>/</td>
+                                  <td>1</td>
                                 </tr>
                                 <tr>
                                   <td>Hydraulic oil capacity (L)</td>
-                                  <td>41</td>
+                                  <td>/</td>
                                 </tr>
                                 <tr>
                                   <td>Travelling speed</td>
-                                  <td>2.84-38.58/6.12-18.01 km/h</td>
+                                  <td>1.65-27.17/4.28-12.85 km/h</td>
                                 </tr>
                                 <tr>
                                   <td>Gearbox gears</td>
-                                  <td>24F+8R</td>
+                                  <td>12F+4R</td>
                                 </tr>
                                 <tr>
                                   <td>Gearshift type</td>
-                                  <td>Synchronizer gearshift</td>
+                                  <td>Engagement sleeve shift</td>
                                 </tr>
                                 <tr>
                                   <td>Clutch</td>
-                                  <td>14-inch LUK</td>
+                                  <td>12-inch LUK</td>
                                 </tr>
                                 <tr>
                                   <td>Hydraulic pump flow</td>
-                                  <td>50L/min</td>
+                                  <td>45L/min</td>
                                 </tr>
                                 <tr>
                                   <td>Hydraulic pump pressure (Mpa)</td>
@@ -193,47 +193,47 @@ export default function TractorDetail() {
                                 </tr>
                                 <tr>
                                   <td>Lifting force</td>
-                                  <td>≥4700kg</td>
+                                  <td>≥2300kg</td>
                                 </tr>
                                 <tr>
                                   <td>PTO</td>
-                                  <td>540/1000r/min, 6-teeth/8-teeth</td>
+                                  <td>540/1000r/min, 6-teeth/21-teeth</td>
                                 </tr>
                                 <tr>
-                                  <td>PTO power output at different rpm (Kw)</td>
-                                  <td>540 (6splines): 65 / 1000 (2splines): 93.5</td>
+                                  <td>PTO power output (Kw)</td>
+                                  <td>540 (6splines): 63 / 1000 (2splines): 63</td>
                                 </tr>
                                 <tr>
                                   <td>Wheelbase</td>
-                                  <td>2688.5mm</td>
+                                  <td>2314mm</td>
                                 </tr>
                                 <tr>
                                   <td>Wheeltread (front/rear)</td>
-                                  <td>1714-2152mm / 1576-2276mm</td>
+                                  <td>1564-2000mm / 1532-2132mm</td>
                                 </tr>
                                 <tr>
                                   <td>Min. ground clearance</td>
-                                  <td>470mm</td>
+                                  <td>475mm</td>
                                 </tr>
                                 <tr>
                                   <td>Min. turning radius</td>
-                                  <td>7±0.3m</td>
+                                  <td>5.6±0.3m</td>
                                 </tr>
                                 <tr>
                                   <td>Overall sizes (L*W*H)</td>
-                                  <td>5050*2370*3200mm</td>
+                                  <td>4350*2300*2600mm (with canopy)</td>
                                 </tr>
                                 <tr>
                                   <td>Net weight</td>
-                                  <td>6000kg</td>
+                                  <td>4650kg (with canopy)</td>
                                 </tr>
                                 <tr>
                                   <td>Rated traction force</td>
-                                  <td>35.1KN</td>
+                                  <td>20.9KN</td>
                                 </tr>
                                 <tr>
                                   <td>Tires (front/rear)</td>
-                                  <td>14.9-26/18.4-38</td>
+                                  <td>14.9-24/18.4-34</td>
                                 </tr>
                                 <tr>
                                   <td>Electronic voltage (V)</td>
@@ -245,19 +245,23 @@ export default function TractorDetail() {
                                 </tr>
                                 <tr>
                                   <td>Alternator (Amps)</td>
-                                  <td>80A</td>
+                                  <td>50A</td>
                                 </tr>
                                 <tr>
                                   <td>Battery type (Ah)</td>
-                                  <td>Lead-acid Battery 150ah</td>
+                                  <td>Lead-acid Battery 120ah</td>
                                 </tr>
                                 <tr>
                                   <td>Fuel tank capacity (L)</td>
-                                  <td>Under-laid 230L</td>
+                                  <td>Under-laid 115L</td>
                                 </tr>
                                 <tr>
                                   <td>Brake type</td>
                                   <td>Oil bath, disc type</td>
+                                </tr>
+                                <tr>
+                                  <td>Canopy Features</td>
+                                  <td>Weather-resistant protective canopy providing shade and protection</td>
                                 </tr>
                                 <tr>
                                   <td>Gauge / safeties</td>
@@ -281,20 +285,20 @@ export default function TractorDetail() {
                         <div className="etw_title1">Related Products</div>
                         <div className="etw_related">
                           <ul>
-                            <li><a href="/yto-esk550">YTO-ESK550</a></li>
-                            <li><a href="/yto-ef804">YTO-EF804</a></li>
                             <li><a href="/yto-ex1054">YTO-EX1054</a></li>
-                            <li><a href="/yto-x1204">YTO-X1204</a></li>
+                            <li><a href="/yto-ex1054-cabin">YTO-EX1054 Cabin</a></li>
                             <li><a href="/yto-ex1254">YTO-EX1254</a></li>
+                            <li><a href="/yto-ex1254-cabin">YTO-EX1254 Cabin</a></li>
+                            <li><a href="/yto-ex1254-canopy">YTO-EX1254 Canopy</a></li>
                             <li><a href="/yto-ex1404">YTO-EX1404</a></li>
-                            <li><a href="/yto-nlx1604">YTO-NLX1604</a></li>
-                            <li><a href="/yto-e2004">YTO-E2004</a></li>
-                            <li><a href="/yto-elx2404">YTO-ELX2404</a></li>
+                            <li><a href="/yto-ex1404-cabin">YTO-EX1404 Cabin</a></li>
+                            <li><a href="/yto-ex1404-canopy">YTO-EX1404 Canopy</a></li>
+                            <li><a href="/yto-x1204-cabin">YTO-X1204 Cabin</a></li>
                           </ul>
                         </div>
                         <div className="clearfix"></div>
                         
-                        <ContactForm productName="YTO-NLX1604" showTitle={true} />
+                        <ContactForm productName="YTO-EX1054 Canopy" showTitle={true} />
                         <div className="clearfix"></div>
                     <div className="clearfix"></div>
                       </div>
@@ -314,14 +318,15 @@ export default function TractorDetail() {
         isOpen={!!selectedImage}
         onClose={() => setSelectedImage(null)}
         imageUrl={selectedImage || ''}
-        alt="YTO-NLX1604 Tractor"
+        alt="YTO-EX1054 Canopy Tractor"
       />
       
       <InquiryModal 
         isOpen={isInquiryOpen}
         onClose={() => setIsInquiryOpen(false)}
-        productName="YTO-NLX1604"
+        productName="YTO-EX1054 Canopy"
       />
     </div>
   );
 }
+
