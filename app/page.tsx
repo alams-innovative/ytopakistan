@@ -164,6 +164,161 @@ export default function Home() {
 
         <div className="clearfix"></div>
 
+        {/* Product Scroller Section */}
+        <div className="etw_product_scroller">
+          <div className="content">
+            <div className="etw_hometitle">Our Products</div>
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              speed={600}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              slidesPerView={1}
+              spaceBetween={20}
+              loop={true}
+              pagination={{ clickable: true }}
+              navigation={true}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+              }}
+              className="product-swiper"
+            >
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-esk550">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-esk550/YTO-ESK550.jpg" alt="YTO-ESK550" />
+                    </div>
+                    <div className="product-card-title">YTO-ESK550</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-ef804">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-ef804/YTO-EF804.jpg" alt="YTO-EF804" />
+                    </div>
+                    <div className="product-card-title">YTO-EF804</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-ex1054-cabin">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-ex1054-cabin/YTO-EX1054-Cabin.jpg" alt="YTO-EX1054 Cabin" />
+                    </div>
+                    <div className="product-card-title">YTO-EX1054 Cabin</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-ex1054-canopy">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-ex1054-canopy/YTO-EX1054-Canopy.jpg" alt="YTO-EX1054 Canopy" />
+                    </div>
+                    <div className="product-card-title">YTO-EX1054 Canopy</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-x1204-cabin">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-x1204-cabin/YTO-X1204-Cabin.jpg" alt="YTO-X1204 Cabin" />
+                    </div>
+                    <div className="product-card-title">YTO-X1204 Cabin</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-x1204-canopy">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-x1204-canopy/YTO-X1204-Canopy.jpg" alt="YTO-X1204 Canopy" />
+                    </div>
+                    <div className="product-card-title">YTO-X1204 Canopy</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-ex1254-cabin">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-ex1254-cabin/YTO-EX1254-Cabin.jpg" alt="YTO-EX1254 Cabin" />
+                    </div>
+                    <div className="product-card-title">YTO-EX1254 Cabin</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-ex1254-canopy">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-ex1254-canopy/YTO-EX1254-Canopy.jpg" alt="YTO-EX1254 Canopy" />
+                    </div>
+                    <div className="product-card-title">YTO-EX1254 Canopy</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-ex1404-cabin">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-ex1404-cabin/YTO-EX1404-Cabin.jpg" alt="YTO-EX1404 Cabin" />
+                    </div>
+                    <div className="product-card-title">YTO-EX1404 Cabin</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-ex1404-canopy">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-ex1404-canopy/YTO-EX1404-Canopy.jpg" alt="YTO-EX1404 Canopy" />
+                    </div>
+                    <div className="product-card-title">YTO-EX1404 Canopy</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-e2004">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-e2004/YTO-E2004.jpg" alt="YTO-E2004" />
+                    </div>
+                    <div className="product-card-title">YTO-E2004</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="product-card">
+                  <a href="/yto-nlx1604-cabin">
+                    <div className="product-card-img">
+                      <img src="/tractors/yto-nlx1604-cabin/YTO-NLX1604-Cabin.jpg" alt="YTO-NLX1604 Cabin" />
+                    </div>
+                    <div className="product-card-title">YTO-NLX1604 Cabin</div>
+                  </a>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+
+        <div className="clearfix"></div>
+
         {/* Main Body - YTO Group */}
         <div className="etw_mainbody" id="about">
           <div className="content">
