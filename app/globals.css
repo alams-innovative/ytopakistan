@@ -250,16 +250,18 @@ a:hover {
 }
 
 #etw_logo {
-  width: 200px;
-  float: left;
-  padding: 0.7rem 0 0;
+  flex-shrink: 0;
+  padding: 0.5rem 0;
   position: relative;
-}
-
-#etw_logo img {
-  max-width: 100%;
-  height: auto;
-}
+  }
+  
+#etw_logo .header-logo {
+  height: 60px;
+  width: auto;
+  max-width: 320px;
+  object-fit: contain;
+  display: block;
+  }
 
 .top-nav {
   flex: 1;
@@ -1143,6 +1145,181 @@ a:hover {
   text-decoration: none;
 }
 
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10001;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Nav Overlay */
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-nav-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  max-width: 85vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  padding-top: 70px;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav.active {
+  right: 0;
+}
+
+.mobile-nav-list {
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-item {
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.mobile-nav-header:hover {
+  background: #f5f5f5;
+}
+
+.mobile-nav-header .chevron {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.mobile-nav-header .chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 16px 20px;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  background: #f5f5f5;
+  color: #b91c1c;
+}
+
+.mobile-submenu {
+  max-height: 0;
+  overflow: hidden;
+  background: #f9f9f9;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-submenu.active {
+  max-height: 500px;
+}
+
+.mobile-submenu li a {
+  display: block;
+  padding: 12px 20px 12px 35px;
+  color: #555;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.mobile-submenu li a:hover {
+  background: #eee;
+  color: #b91c1c;
+}
+
+.mobile-contact-info {
+  padding: 20px;
+  border-top: 2px solid #b91c1c;
+  margin-top: 20px;
+}
+
+.mobile-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.mobile-contact-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-contact-link.whatsapp {
+  color: #25D366;
+}
+
+.mobile-contact-link.whatsapp svg {
+  fill: #25D366;
+}
+
 /* Responsive */
 @media (max-width: 1199.98px) {
   .navbar-nav .nav-link {
@@ -1150,23 +1327,42 @@ a:hover {
     margin: 0 0.5rem;
   }
 
-  #etw_logo {
-    width: 140px;
-    padding: 1rem 0 0;
+  #etw_logo .header-logo {
+    height: 50px;
+    max-width: 280px;
   }
 }
 
 @media (max-width: 991.98px) {
   #header {
-    position: relative;
+    position: fixed;
+  }
+
+  #headerin {
+    padding: 0 10px;
   }
 
   #container {
     margin: 0 auto;
+    padding-top: 70px;
   }
 
-  #etw_logo {
-    padding: 1rem 0;
+  #etw_logo .header-logo {
+    height: 45px;
+    max-width: 240px;
+  }
+
+  /* Hide desktop nav, show mobile toggle */
+  .top-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
   }
 
   .nav-item.dropdown:hover .dropdown-menu {
@@ -3793,6 +3989,353 @@ ul.item li:before {
   font-weight: 600;
 }
 
+/* Distributor Card - Modern Design */
+.distributor-card {
+  margin: 2rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+}
+
+.distributor-header {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.distributor-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.distributor-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.distributor-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.distributor-body {
+  padding: 1.5rem;
+}
+
+.company-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #b91c1c;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fee2e2;
+}
+
+.distributor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.distributor-info .info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.distributor-info .info-item svg {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  color: #b91c1c;
+  margin-top: 2px;
+}
+
+.distributor-info .info-item a {
+  color: #b91c1c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.distributor-info .info-item a:hover {
+  color: #991b1b;
+  text-decoration: underline;
+}
+
+/* Related Products - Modern Design */
+.related-products-section {
+  margin: 2.5rem 0;
+}
+
+.related-products-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.related-products-header .header-line {
+  width: 4px;
+  height: 28px;
+  background: linear-gradient(180deg, #b91c1c 0%, #ef4444 100%);
+  border-radius: 2px;
+}
+
+.related-products-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.related-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .related-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .related-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.related-product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.related-product-item:hover {
+  border-color: #b91c1c;
+  background: #fef2f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.12);
+}
+
+.related-product-item.active {
+  border-color: #b91c1c;
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+}
+
+.related-product-item.active .product-name,
+.related-product-item.active .product-hp {
+  color: #fff;
+}
+
+.related-product-item .product-name {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.related-product-item .product-hp {
+  font-size: 0.8rem;
+  color: #6b7280;
+  background: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.related-product-item.active .product-hp {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Google Map Embed */
+.google-map-container {
+  margin: 2rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.google-map-header {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-map-header svg {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+
+.google-map-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.google-map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  display: block;
+}
+
+/* Contact Page Styles */
+.contact-section {
+  margin-bottom: 2.5rem;
+}
+
+.contact-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(145deg, #25D366 0%, #1da851 100%);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-whatsapp-btn:hover {
+  background: linear-gradient(145deg, #1da851 0%, #128C7E 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.contact-whatsapp-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.google-map-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  color: #b91c1c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.google-map-link:hover {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.google-map-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Contact Page Two Column Layout */
+.contact-two-col {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  margin: 1.5rem 0;
+}
+
+.contact-form-side {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-map-side {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-map-wrapper {
+  height: 100%;
+  min-height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-map-wrapper iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+.map-directions-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.map-directions-btn:hover {
+  background: linear-gradient(135deg, #991b1b 0%, #b91c1c 100%);
+  color: #fff;
+}
+
+.map-directions-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 991px) {
+  .contact-two-col {
+    flex-direction: column;
+  }
+  
+  .contact-map-wrapper {
+    min-height: 350px;
+  }
+}
+
 /* Get in Touch Form */
 .inquiry_box {
   margin: 3rem 0;
@@ -3890,9 +4433,72 @@ ul.item li:before {
 
 .contact_form .btn-primary:hover {
   background: #d5d5d5;
+  }
+
+/* Form Buttons - Send and WhatsApp side by side */
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 0.5rem;
 }
 
-.contact_item {
+.form-buttons .btn-send,
+.form-buttons .btn-whatsapp {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.form-buttons .btn-send {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  color: #fff;
+}
+
+.form-buttons .btn-send:hover {
+  background: linear-gradient(135deg, #991b1b 0%, #b91c1c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.3);
+}
+
+.form-buttons .btn-send svg {
+  width: 18px;
+  height: 18px;
+}
+
+.form-buttons .btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #1da851 100%);
+  color: #fff;
+}
+
+.form-buttons .btn-whatsapp:hover {
+  background: linear-gradient(135deg, #1da851 0%, #128C7E 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  color: #fff;
+}
+
+.form-buttons .btn-whatsapp svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 480px) {
+  .form-buttons {
+    flex-direction: column;
+  }
+}
+  
+  .contact_item {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -5469,5 +6075,252 @@ ul.item li:before {
 
   .inquiry-detail-body {
     padding: 1rem;
+  }
+}
+
+/* ========================================
+   COMPREHENSIVE MOBILE RESPONSIVE STYLES
+   ======================================== */
+
+/* Mobile header adjustments */
+@media (max-width: 767.98px) {
+  #etw_logo .header-logo {
+    height: 40px;
+    max-width: 200px;
+  }
+  
+  body {
+    padding-top: 65px;
+  }
+  
+  #container {
+    padding-top: 0;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  /* Home page mobile */
+  .etw_hometitle {
+    font-size: 1.4rem !important;
+    line-height: 1.8rem !important;
+    padding: 1rem !important;
+  }
+  
+  /* Product page mobile */
+  .etw_mainproducts ul > li {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+  
+  /* Tables mobile */
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .table {
+    font-size: 0.85rem;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
+  
+  /* Contact two column layout mobile */
+  .contact-two-col {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-map-wrapper {
+    min-height: 300px;
+  }
+  
+  /* Form buttons mobile */
+  .form-buttons {
+    flex-direction: column;
+  }
+  
+  /* Footer mobile */
+  #etw_homefooter {
+    padding: 1rem;
+  }
+  
+  #etw_homefooter a {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  /* Gallery mobile */
+  .etw_pic,
+  .etw_pic1,
+  .etw_pic2,
+  .etw_pic3,
+  .etw_pic4,
+  .etw_pic5 {
+    padding: 0 10px;
+  }
+  
+  .etw_pic ul > li,
+  .etw_pic1 ul > li,
+  .etw_pic2 ul > li,
+  .etw_pic3 ul > li,
+  .etw_pic4 ul > li,
+  .etw_pic5 ul > li {
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
+  }
+  
+  /* Video cards mobile */
+  .etwvideo_hub ul > li {
+    width: 100%;
+  }
+  
+  /* Product detail page mobile */
+  .col-sm-4,
+  .col-sm-8,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-lg-6 {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  /* Sidebar mobile */
+  .sidebar-nav-links {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-nav-links a {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Distributor card mobile */
+  .distributor-card {
+    margin: 1rem 0;
+  }
+  
+  .distributor-card-header {
+    padding: 12px 15px;
+  }
+  
+  .distributor-card-body {
+    padding: 15px;
+  }
+  
+  .distributor-contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  /* Related products mobile */
+  .related-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .related-product-item {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .related-hp-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+  
+  /* Buttons mobile */
+  .btn,
+  .btn-primary,
+  .btn-send,
+  .btn-whatsapp {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  
+  /* Inquiry modal mobile */
+  .inquiry-modal-content {
+    width: 95%;
+    max-width: 95%;
+  }
+  
+  /* About section mobile */
+  .about_box1 ul li ol {
+    flex-direction: column;
+  }
+  
+  .about_box1 ul li ol li.product_img,
+  .about_box1 ul li ol li.product_con {
+    width: 100%;
+  }
+  
+  /* Timeline mobile */
+  .timeline-item {
+    padding-left: 20px;
+  }
+  
+  .timeline-item::before {
+    left: 0;
+  }
+  
+  /* Slider mobile */
+  .slider-item {
+    min-height: 250px;
+  }
+  
+  .slider-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .slider-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 479.98px) {
+  #etw_logo .header-logo {
+    height: 35px;
+    max-width: 180px;
+  }
+  
+  .mobile-menu-toggle {
+    width: 26px;
+    height: 20px;
+  }
+  
+  .mobile-nav {
+    width: 280px;
+  }
+  
+  .related-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .etw_hometitle {
+    font-size: 1.2rem !important;
+  }
+  
+  .protitle1 span {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  
+  /* Product specs table mobile */
+  .spec-table th,
+  .spec-table td {
+    padding: 8px 10px;
+    font-size: 0.8rem;
   }
 }

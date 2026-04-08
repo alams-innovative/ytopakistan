@@ -7,6 +7,8 @@ import ImageModal from '../components/ImageModal';
 import InquiryModal from '../components/InquiryModal';
 import ProductSidebar from '../components/ProductSidebar';
 import ContactForm from '../components/ContactForm';
+import DistributorCard from '../components/DistributorCard';
+import RelatedProducts from '../components/RelatedProducts';
 
 export default function TractorDetail() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -278,30 +280,10 @@ export default function TractorDetail() {
                           </div>
                           <div className="clearfix"></div>
                           
-                          <div className="mt-4 p-3 bg-light border">
-                            <p className="mb-1"><strong>Distributed in Pakistan By:</strong></p>
-                            <p className="mb-1">PAK TRACTOR MANUFACTURING COMPANY</p>
-                            <p className="mb-1">16-KM, Multan Road, Pakka Mile Stop, Shahpur, Lahore.</p>
-                            <p className="mb-1">Phone: 92-42-37512567-8</p>
-                            <p className="mb-1">UAN: 111-787-456</p>
-                            <p className="mb-0">Fax: 92-42-37512569</p>
-                          </div>
+                          <DistributorCard />
                         </div>
                       
-                        <div className="etw_title1">Related Products</div>
-                        <div className="etw_related">
-                          <ul>
-                            <li><a href="/yto-esk550">YTO-ESK550</a></li>
-                            <li><a href="/yto-ef804">YTO-EF804</a></li>
-                            <li><a href="/yto-ex1054">YTO-EX1054</a></li>
-                            <li><a href="/yto-x1204">YTO-X1204</a></li>
-                            <li><a href="/yto-ex1254">YTO-EX1254</a></li>
-                            <li><a href="/yto-ex1404">YTO-EX1404</a></li>
-                            <li><a href="/yto-nlx1604">YTO-NLX1604</a></li>
-                            <li><a href="/yto-e2004">YTO-E2004</a></li>
-                            <li><a href="/yto-elx2404">YTO-ELX2404</a></li>
-                          </ul>
-                        </div>
+                        <RelatedProducts currentProduct="YTO-EX1054" />
                         <div className="clearfix"></div>
                         
                         <ContactForm productName="YTO-EX1054" showTitle={true} />

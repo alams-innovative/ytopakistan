@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
   useEffect(() => {
@@ -38,32 +39,41 @@ export default function Contact() {
         
         <div className="content content_white">
           <p>YTO Pakistan is the official local presence of YTO Co, Ltd. Delivering advanced agricultural Tractors to the Pakistani market with a strong focus on reliability, performance, and long-term customer support. YTO International, Ltd., a subsidiary of the YTO Group, has established a strong presence in Pakistan, providing high-quality agricultural machinery and equipment to farmers and businesses across the country. The YTO Group offers four pillar products: agricultural equipment, construction machinery, vehicles, and power machinery. With our local office in Lahore, we are committed to serving the Pakistani market with world-class products and comprehensive after-sales support.</p>
-          <p className="mb-4">YTO Pakistan warmly welcomes customers from across Pakistan with sincerity and efficient service. We are dedicated to supporting the agricultural sector in Pakistan with reliable machinery and excellent customer service for a prosperous future.</p>``
+          <p className="mb-4">YTO Pakistan warmly welcomes customers from across Pakistan with sincerity and efficient service. We are dedicated to supporting the agricultural sector in Pakistan with reliable machinery and excellent customer service for a prosperous future.</p>
           
           <div className="clearfix"></div>
           
-          <div className="table-responsive mb-5">
-            <table className="table table-hover table-striped ke-zeroborder tables">
-              <tbody>
-                <tr>
-                  <td colSpan={3}>
-                    <p className="mb-0"><strong>YTO Pakistan - Official Local Presence</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colSpan={3}>Address: 16 km, Multan Road, Pakka Mile Stop, Shahpur, Lahore, Pakistan</td>
-                </tr>
-                <tr>
-                  <td>YTO Pakistan Office</td>
-                  <td>Tel.:<a href="tel:+92-42-37512567-8">92-42-37512567-8</a></td>
-                  <td>Email:<a href="mailto:info@ptmc.com.pk">info@ptmc.com.pk</a>, <a href="mailto:Sales@ptmc.com.pk">Sales@ptmc.com.pk</a></td>
-                </tr>
-                <tr>
-                  <td>WhatsApp</td>
-                  <td colSpan={2}><a href="https://wa.me/923115997569" target="_blank" rel="noopener noreferrer">0311-5997569</a></td>
-                </tr>
-              </tbody>
-            </table>
+          {/* Two Column Layout: Form Left, Map Right */}
+          <div className="contact-two-col">
+            {/* Left Side - Form */}
+            <div className="contact-form-side">
+              <ContactForm showTitle={true} />
+            </div>
+            
+            {/* Right Side - Google Map */}
+            <div className="contact-map-side">
+              <div className="contact-map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.4754055744567!2d74.32276!3d31.45247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190145ae93ab97%3A0x72c098e47c3b07fe!2sPak%20Tractor%20Manufacturing%20Company!5e0!3m2!1sen!2spk!4v1712600000000!5m2!1sen!2spk"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Pak Tractor Manufacturing Company - Location"
+                ></iframe>
+                <a 
+                  href="https://maps.app.goo.gl/rmp1C8ELhir1Hv6s7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="map-directions-btn"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  Get Directions
+                </a>
+              </div>
+            </div>
           </div>
           
           <div className="clearfix"></div>
