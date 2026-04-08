@@ -52,6 +52,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
+
             <div className="col-12 col-md-6 col-lg-3">
               <div className="etw_hometitle">
                 <a href="/capabilities">Capabilities</a>
