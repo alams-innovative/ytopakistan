@@ -54,80 +54,100 @@ export default function Products() {
             </div>
             
             <div className="js-gallery-wrap">
+              {/* About Products Section with Videos */}
+              <div className="etw_title2 etw_title_pro mb-3">
+                <h2>ABOUT PRODUCTS</h2>
+              </div>
+              
+              <div className="etwvideo_hub etwvideo_hub1 mb-4">
+                <ul>
+                  {/* YouTube Video Card 1 */}
+                  <li>
+                    <ol>
+                      <li className="product_img">
+                        <a 
+                          onClick={() => setIsVideoModalOpen(true)}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          <img 
+                            src={thumbnailUrl} 
+                            alt="YTO Tractors Video" 
+                          />
+                          <span className="video_btn2"></span>
+                        </a>
+                      </li>
+                      <li className="product_con">
+                        <h3>
+                          <a 
+                            onClick={() => setIsVideoModalOpen(true)} 
+                            style={{ cursor: 'pointer' }}
+                          >
+                            Product Video 1
+                          </a>
+                        </h3>
+                        <p>Watch YTO tractors performing in real agricultural conditions. Experience the quality and reliability firsthand.</p>
+                      </li>
+                    </ol>
+                  </li>
+                  {/* Video Card 2 - Placeholder */}
+                  <li>
+                    <ol>
+                      <li className="product_img">
+                        <a href="/video" style={{ cursor: 'pointer' }}>
+                          <div style={{ 
+                            background: 'linear-gradient(135deg, #e8f4fc 0%, #d1e8f5 100%)', 
+                            aspectRatio: '16/9', 
+                            display: 'flex', 
+                            alignItems: 'center', 
+                            justifyContent: 'center',
+                            position: 'relative'
+                          }}>
+                            <span style={{ color: '#7cb8d9', fontSize: '14px' }}>Video Coming Soon</span>
+                          </div>
+                          <span className="video_btn2"></span>
+                        </a>
+                      </li>
+                      <li className="product_con">
+                        <h3><a href="/video">Product Video 2</a></h3>
+                        <p>More videos showcasing our agricultural machinery will be available soon.</p>
+                      </li>
+                    </ol>
+                  </li>
+                  {/* Video Card 3 - Placeholder */}
+                  <li>
+                    <ol>
+                      <li className="product_img">
+                        <a href="/video" style={{ cursor: 'pointer' }}>
+                          <div style={{ 
+                            background: 'linear-gradient(135deg, #e8f4fc 0%, #d1e8f5 100%)', 
+                            aspectRatio: '16/9', 
+                            display: 'flex', 
+                            alignItems: 'center', 
+                            justifyContent: 'center',
+                            position: 'relative'
+                          }}>
+                            <span style={{ color: '#7cb8d9', fontSize: '14px' }}>Video Coming Soon</span>
+                          </div>
+                          <span className="video_btn2"></span>
+                        </a>
+                      </li>
+                      <li className="product_con">
+                        <h3><a href="/video">Product Video 3</a></h3>
+                        <p>Stay tuned for more exciting product videos and demonstrations.</p>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="clearfix"></div>
+              
               <div>
                 <h2 itemProp="name">Products</h2>
               </div>
               
               <div className="etw_products etw_products_two mb-4">
                 <ul>
-                  {/* YouTube Video Card */}
-                  <li>
-                    <ol>
-                      <li className="product_img">
-                        <div 
-                          onClick={() => setIsVideoModalOpen(true)}
-                          style={{
-                            position: 'relative',
-                            cursor: 'pointer',
-                            borderRadius: '12px',
-                            overflow: 'hidden',
-                            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
-                          }}
-                        >
-                          <img 
-                            src={thumbnailUrl} 
-                            alt="YTO Tractors Video" 
-                            style={{
-                              width: '100%',
-                              height: 'auto',
-                              display: 'block',
-                              transition: 'transform 0.3s ease',
-                            }}
-                            onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                            onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                          />
-                          {/* Play Button Overlay */}
-                          <div style={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            width: '80px',
-                            height: '80px',
-                            backgroundColor: 'rgba(185, 28, 28, 0.9)',
-                            borderRadius: '50%',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.3)',
-                            transition: 'all 0.3s ease',
-                          }}>
-                            <svg 
-                              width="32" 
-                              height="32" 
-                              viewBox="0 0 24 24" 
-                              fill="white"
-                              style={{ marginLeft: '4px' }}
-                            >
-                              <path d="M8 5v14l11-7z"/>
-                            </svg>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="product_con">
-                        <span 
-                          onClick={() => setIsVideoModalOpen(true)} 
-                          style={{ cursor: 'pointer', fontWeight: '600', color: '#b91c1c' }}
-                        >
-                          Watch YTO Tractors in Action
-                        </span> 
-                        <span>See our powerful YTO tractors performing in real agricultural conditions. Experience the quality and reliability firsthand.</span>
-                      </li>
-                      <div className="more2">
-                        <a onClick={() => setIsVideoModalOpen(true)} style={{ cursor: 'pointer' }}>Watch Video</a>
-                      </div>
-                    </ol>
-                  </li>
                   {/* Tractors Card */}
                   <li>
                     <ol>
