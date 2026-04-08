@@ -37,21 +37,7 @@ export default function Footer() {
                 <li><a href="/service">Service & Support</a></li>
               </ul>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
-              <div className="pro_contact">
-                <div className="etw_hometitle">
-                  <a href="/products">Products</a>
-                </div>
-                <ul>
-                  <li><a href="/5-tractors">Tractors</a></li>
-                  <li><a href="/6-harvesting-equipment">Harvesting Equipment</a></li>
-                  <li><a href="/7-agricultural-implements">Agricultural Implements</a></li>
-                  <li><a href="/4-engine">Diesel Engine & Genset</a></li>
-                  <li><a href="/4b-diesel-engine-parts">OEM Parts</a></li>
-                  <li><a href="/products-b">1995-2018 Products</a></li>
-                </ul>
-              </div>
-            </div>
+
             <div className="col-12 col-md-6 col-lg-3">
               <div className="etw_hometitle">
                 <a href="/capabilities">Capabilities</a>
