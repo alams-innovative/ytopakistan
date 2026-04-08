@@ -4237,9 +4237,72 @@ ul.item li:before {
 
 .contact_form .btn-primary:hover {
   background: #d5d5d5;
+  }
+
+/* Form Buttons - Send and WhatsApp side by side */
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 0.5rem;
 }
 
-.contact_item {
+.form-buttons .btn-send,
+.form-buttons .btn-whatsapp {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.form-buttons .btn-send {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  color: #fff;
+}
+
+.form-buttons .btn-send:hover {
+  background: linear-gradient(135deg, #991b1b 0%, #b91c1c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.3);
+}
+
+.form-buttons .btn-send svg {
+  width: 18px;
+  height: 18px;
+}
+
+.form-buttons .btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #1da851 100%);
+  color: #fff;
+}
+
+.form-buttons .btn-whatsapp:hover {
+  background: linear-gradient(135deg, #1da851 0%, #128C7E 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  color: #fff;
+}
+
+.form-buttons .btn-whatsapp svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 480px) {
+  .form-buttons {
+    flex-direction: column;
+  }
+}
+  
+  .contact_item {
   list-style: none;
   padding: 0;
   margin: 0;
