@@ -97,12 +97,9 @@ export default function Videos() {
                         style={{ cursor: 'pointer', display: 'block', position: 'relative' }}
                       >
                         <img 
-                          src="https://img.youtube.com/vi/yZp_XLVrI8k/maxresdefault.jpg"
-                          alt="YTO Tractors Video" 
-                          style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }}
-                          onError={(e) => {
-                            e.currentTarget.src = 'https://img.youtube.com/vi/yZp_XLVrI8k/hqdefault.jpg';
-                          }}
+                          src="/images/yto-x854-canopy-video.png"
+                          alt="YTO X854 Tractor Canopy Video" 
+                          className="video-thumbnail"
                         />
                         <span className="video_btn2"></span>
                       </a>
@@ -112,9 +109,9 @@ export default function Videos() {
                         onClick={() => openVideoModal('yZp_XLVrI8k')} 
                         style={{ cursor: 'pointer', fontWeight: 'bold' }}
                       >
-                        Product Video 1
+                        YTO X854 Tractor Canopy
                       </a>
-                      <span>Watch YTO tractors performing in real agricultural conditions. Experience the quality and reliability firsthand.</span>
+                      <span>Watch the YTO X854 tractor with front loader demonstrating its versatility and power in construction and material handling applications.</span>
                     </li>
                   </ol>
                 </li>
@@ -128,7 +125,7 @@ export default function Videos() {
                         <img 
                           src="/images/yto-ex1054-canopy-video.png"
                           alt="YTO EX 1054 Tractor Canopy Video" 
-                          style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }}
+                          className="video-thumbnail"
                         />
                         <span className="video_btn2"></span>
                       </a>
