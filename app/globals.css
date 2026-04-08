@@ -4045,6 +4045,31 @@ ul.item li:before {
   height: 22px;
 }
 
+.google-map-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  color: #b91c1c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.google-map-link:hover {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.google-map-link svg {
+  width: 18px;
+  height: 18px;
+}
+
 /* Get in Touch Form */
 .inquiry_box {
   margin: 3rem 0;
