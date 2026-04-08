@@ -19,18 +19,18 @@ export default function Header() {
           <nav className="navbar">
             <ul className="navbar-nav">
               <li className="nav-item dropdown">
-                <a href="/about" className="nav-link dropdown-toggle">About YTO</a>
+                <a href="/about-yto" className="nav-link dropdown-toggle">About YTO</a>
                 <ul className="dropdown-menu">
-                  <li><a href="/about" className="dropdown-item">Company Profile</a></li>
+                  <li><a href="/about-yto" className="dropdown-item">Company Profile</a></li>
                   <li><a href="/history" className="dropdown-item">History</a></li>
                   <li><a href="/capabilities" className="dropdown-item">Capabilities</a></li>
                 </ul>
               </li>
               
               <li className="nav-item dropdown">
-                <a href="/about-ptmc" className="nav-link dropdown-toggle">About PTMC</a>
+                <a href="/about" className="nav-link dropdown-toggle">About PTMC</a>
                 <ul className="dropdown-menu">
-                  <li><a href="/about-ptmc" className="dropdown-item">Company Profile</a></li>
+                  <li><a href="/about" className="dropdown-item">Company Profile</a></li>
                   <li><a href="/certificate" className="dropdown-item">Certificates</a></li>
                   <li><a href="/partners" className="dropdown-item">Our Partners</a></li>
                 </ul>
