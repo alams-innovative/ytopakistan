@@ -1485,10 +1485,6 @@ a:hover {
   clear: both;
 }
 
-.navright ul > li:nth-child(n+9) {
-  display: none;
-}
-
 .navright ul li ol {
   display: flex;
   flex-wrap: wrap;

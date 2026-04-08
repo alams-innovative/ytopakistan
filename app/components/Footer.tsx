@@ -20,7 +20,7 @@ export default function Footer() {
                   <p><strong>Phone:</strong><br />
                   <a href="tel:92-42-37512567-8">92-42-37512567-8</a></p>
                   <p><strong>WhatsApp:</strong><br />
-                  <a href="https://wa.me/923026612010" target="_blank" rel="noopener noreferrer">+92 302 6612010</a></p>
+                  <a href="https://wa.me/923115997569" target="_blank" rel="noopener noreferrer">0311-5997569</a></p>
                 </div>
               </div>
             </div>
@@ -30,10 +30,7 @@ export default function Footer() {
               </div>
               <ul>
                 <li><a href="/about">Company Profile</a></li>
-                <li><a href="/certificate">Certificates</a></li>
                 <li><a href="/history">History</a></li>
-                <li><a href="/r-d">R&D</a></li>
-                <li><a href="/manufacturing">Manufacturing</a></li>
                 <li><a href="/service">Service & Support</a></li>
               </ul>
             </div>
@@ -53,14 +50,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-lg-3">
-              <div className="etw_hometitle">
-                <a href="/capabilities">Capabilities</a>
-              </div>
-              <div className="etw_hometitle">
-                <a href="/video">Videos</a>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

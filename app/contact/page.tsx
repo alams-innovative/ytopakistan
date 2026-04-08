@@ -60,7 +60,7 @@ export default function Contact() {
                 </tr>
                 <tr>
                   <td>WhatsApp</td>
-                  <td colSpan={2}><a href="https://wa.me/923026612010" target="_blank" rel="noopener noreferrer">+92 302 6612010</a></td>
+                  <td colSpan={2}><a href="https://wa.me/923115997569" target="_blank" rel="noopener noreferrer">0311-5997569</a></td>
                 </tr>
               </tbody>
             </table>
