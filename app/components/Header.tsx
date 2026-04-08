@@ -55,7 +55,7 @@ export default function Header() {
                         </ul>
                       </div>
                       <div className="navright">
-                        {/* Tractors - 10 Products with transparent images */}
+                        {/* Tractors - 12 Products with transparent images */}
                         <ul className={activeCategory === 0 ? "shownavpro" : ""}>
                           <li>
                             <ol>
@@ -79,6 +79,18 @@ export default function Header() {
                             <ol>
                               <li className="product_img"><a href="/yto-ex1054-canopy"><img src="/tractors-dropdown/YTO-EX1054-Canopy.png" alt="YTO-EX1054 Canopy" /></a></li>
                               <li className="product_con"><a href="/yto-ex1054-canopy">YTO-EX1054 Canopy</a></li>
+                            </ol>
+                          </li>
+                          <li>
+                            <ol>
+                              <li className="product_img"><a href="/yto-x1204-cabin"><img src="/tractors-dropdown/YTO-X1204-Cabin.png" alt="YTO-X1204 Cabin" /></a></li>
+                              <li className="product_con"><a href="/yto-x1204-cabin">YTO-X1204 Cabin</a></li>
+                            </ol>
+                          </li>
+                          <li>
+                            <ol>
+                              <li className="product_img"><a href="/yto-x1204-canopy"><img src="/tractors-dropdown/YTO-X1204-Canopy.png" alt="YTO-X1204 Canopy" /></a></li>
+                              <li className="product_con"><a href="/yto-x1204-canopy">YTO-X1204 Canopy</a></li>
                             </ol>
                           </li>
                           <li>
