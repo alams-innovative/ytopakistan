@@ -28,9 +28,9 @@ export default function Header() {
               </li>
               
               <li className="nav-item dropdown">
-                <a href="/about" className="nav-link dropdown-toggle">About PTMC</a>
+                <a href="/about-ptmc" className="nav-link dropdown-toggle">About PTMC</a>
                 <ul className="dropdown-menu">
-                  <li><a href="/about" className="dropdown-item">Company Profile</a></li>
+                  <li><a href="/about-ptmc" className="dropdown-item">Company Profile</a></li>
                   <li><a href="/certificate" className="dropdown-item">Certificates</a></li>
                   <li><a href="/partners" className="dropdown-item">Our Partners</a></li>
                 </ul>
