@@ -43,40 +43,14 @@ export default function Contact() {
           
           <div className="clearfix"></div>
           
-          <div className="row">
-            {/* Left Side - Contact Info & Form */}
-            <div className="col-12 col-lg-6">
-              {/* Contact Information Card */}
-              <div className="table-responsive mb-4">
-                <table className="table table-hover table-striped ke-zeroborder tables">
-                  <tbody>
-                    <tr>
-                      <td colSpan={3}>
-                        <p className="mb-0"><strong>YTO Pakistan - Official Local Presence</strong></p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colSpan={3}>Address: 16 km, Multan Road, Pakka Mile Stop, Shahpur, Lahore, Pakistan</td>
-                    </tr>
-                    <tr>
-                      <td>YTO Pakistan Office</td>
-                      <td>Tel.:<a href="tel:+92-42-37512567-8">92-42-37512567-8</a></td>
-                      <td>Email:<a href="mailto:info@ptmc.com.pk">info@ptmc.com.pk</a>, <a href="mailto:Sales@ptmc.com.pk">Sales@ptmc.com.pk</a></td>
-                    </tr>
-                    <tr>
-                      <td>WhatsApp</td>
-                      <td colSpan={2}><a href="https://wa.me/923115997569" target="_blank" rel="noopener noreferrer">0311-5997569</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              
-              {/* Inquiry Form */}
+          {/* Two Column Layout: Form Left, Map Right */}
+          <div className="contact-two-col">
+            {/* Left Side - Form */}
+            <div className="contact-form-side">
               <ContactForm showTitle={true} />
               
               {/* WhatsApp Button - Under Form */}
               <div className="mt-4 text-center">
-                <p className="text-muted mb-3" style={{ fontSize: '0.95rem' }}>Or contact us directly via WhatsApp</p>
                 <a 
                   href="https://wa.me/923115997569?text=Hi%2C%20I%20am%20interested%20in%20YTO%20Tractors.%20Please%20provide%20more%20details."
                   target="_blank"
@@ -92,35 +66,26 @@ export default function Contact() {
             </div>
             
             {/* Right Side - Google Map */}
-            <div className="col-12 col-lg-6">
-              <div className="google-map-container" style={{ height: '100%', minHeight: '500px' }}>
-                <div className="google-map-header">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                  </svg>
-                  <h3>Our Location</h3>
-                </div>
+            <div className="contact-map-side">
+              <div className="contact-map-wrapper">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1703.2377027872283!2d74.32496115!3d31.45247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190145ae93ab97%3A0x72c098e47c3b07fe!2sPak%20Tractor%20Manufacturing%20Company!5e0!3m2!1sen!2spk!4v1712600000000!5m2!1sen!2spk"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="PTMC Location"
-                  style={{ height: 'calc(100% - 100px)', minHeight: '400px' }}
+                  title="Pak Tractor Manufacturing Company - Location"
                 ></iframe>
                 <a 
                   href="https://maps.app.goo.gl/C92so1ztScyUm1Ss5" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="google-map-link"
+                  className="map-directions-btn"
                 >
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15 3 21 3 21 9"/>
-                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
                   </svg>
-                  Open in Google Maps
+                  Get Directions
                 </a>
               </div>
             </div>

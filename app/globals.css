@@ -4070,6 +4070,76 @@ ul.item li:before {
   height: 18px;
 }
 
+/* Contact Page Two Column Layout */
+.contact-two-col {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  margin: 1.5rem 0;
+}
+
+.contact-form-side {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-map-side {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-map-wrapper {
+  height: 100%;
+  min-height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-map-wrapper iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+.map-directions-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.map-directions-btn:hover {
+  background: linear-gradient(135deg, #991b1b 0%, #b91c1c 100%);
+  color: #fff;
+}
+
+.map-directions-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 991px) {
+  .contact-two-col {
+    flex-direction: column;
+  }
+  
+  .contact-map-wrapper {
+    min-height: 350px;
+  }
+}
+
 /* Get in Touch Form */
 .inquiry_box {
   margin: 3rem 0;
