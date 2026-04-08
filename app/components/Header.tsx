@@ -55,7 +55,7 @@ export default function Header() {
                         </ul>
                       </div>
                       <div className="navright">
-                        {/* Tractors */}
+                        {/* Tractors - 12 Products */}
                         <ul className={activeCategory === 0 ? "shownavpro" : ""}>
                           <li>
                             <ol>
@@ -71,44 +71,62 @@ export default function Header() {
                           </li>
                           <li>
                             <ol>
-                              <li className="product_img"><a href="/yto-ex1054"><img src="/tractors/yto-ex1054/YTO-EX1054.jpg" alt="YTO-EX1054" /></a></li>
-                              <li className="product_con"><a href="/yto-ex1054">YTO-EX1054</a></li>
+                              <li className="product_img"><a href="/yto-ex1054-cabin"><img src="/tractors/yto-ex1054-cabin/YTO-EX1054-Cabin.jpg" alt="YTO-EX1054 Cabin" /></a></li>
+                              <li className="product_con"><a href="/yto-ex1054-cabin">YTO-EX1054 Cabin</a></li>
                             </ol>
                           </li>
                           <li>
                             <ol>
-                              <li className="product_img"><a href="/yto-x1204"><img src="/tractors/yto-x1204/YTO-X1204.jpg" alt="YTO-X1204" /></a></li>
-                              <li className="product_con"><a href="/yto-x1204">YTO-X1204</a></li>
+                              <li className="product_img"><a href="/yto-ex1054-canopy"><img src="/tractors/yto-ex1054-canopy/YTO-EX1054-Canopy.jpg" alt="YTO-EX1054 Canopy" /></a></li>
+                              <li className="product_con"><a href="/yto-ex1054-canopy">YTO-EX1054 Canopy</a></li>
                             </ol>
                           </li>
                           <li>
                             <ol>
-                              <li className="product_img"><a href="/yto-ex1254"><img src="/tractors/yto-ex1254/YTO-EX1254.jpg" alt="YTO-EX1254" /></a></li>
-                              <li className="product_con"><a href="/yto-ex1254">YTO-EX1254</a></li>
+                              <li className="product_img"><a href="/yto-x1204-cabin"><img src="/tractors/yto-x1204-cabin/YTO-X1204-Cabin.jpg" alt="YTO-X1204 Cabin" /></a></li>
+                              <li className="product_con"><a href="/yto-x1204-cabin">YTO-X1204 Cabin</a></li>
                             </ol>
                           </li>
                           <li>
                             <ol>
-                              <li className="product_img"><a href="/yto-ex1404"><img src="/tractors/yto-ex1404/YTO-EX1404.jpg" alt="YTO-EX1404" /></a></li>
-                              <li className="product_con"><a href="/yto-ex1404">YTO-EX1404</a></li>
+                              <li className="product_img"><a href="/yto-x1204-canopy"><img src="/tractors/yto-x1204-canopy/YTO-X1204-Canopy.jpg" alt="YTO-X1204 Canopy" /></a></li>
+                              <li className="product_con"><a href="/yto-x1204-canopy">YTO-X1204 Canopy</a></li>
                             </ol>
                           </li>
                           <li>
                             <ol>
-                              <li className="product_img"><a href="/yto-nlx1604"><img src="/tractors/yto-nlx1604/YTO-NLX1604.jpg" alt="YTO-NLX1604" /></a></li>
-                              <li className="product_con"><a href="/yto-nlx1604">YTO-NLX1604</a></li>
+                              <li className="product_img"><a href="/yto-ex1254-cabin"><img src="/tractors/yto-ex1254-cabin/YTO-EX1254-Cabin.jpg" alt="YTO-EX1254 Cabin" /></a></li>
+                              <li className="product_con"><a href="/yto-ex1254-cabin">YTO-EX1254 Cabin</a></li>
+                            </ol>
+                          </li>
+                          <li>
+                            <ol>
+                              <li className="product_img"><a href="/yto-ex1254-canopy"><img src="/tractors/yto-ex1254-canopy/YTO-EX1254-Canopy.jpg" alt="YTO-EX1254 Canopy" /></a></li>
+                              <li className="product_con"><a href="/yto-ex1254-canopy">YTO-EX1254 Canopy</a></li>
+                            </ol>
+                          </li>
+                          <li>
+                            <ol>
+                              <li className="product_img"><a href="/yto-ex1404-cabin"><img src="/tractors/yto-ex1404-cabin/YTO-EX1404-Cabin.jpg" alt="YTO-EX1404 Cabin" /></a></li>
+                              <li className="product_con"><a href="/yto-ex1404-cabin">YTO-EX1404 Cabin</a></li>
+                            </ol>
+                          </li>
+                          <li>
+                            <ol>
+                              <li className="product_img"><a href="/yto-ex1404-canopy"><img src="/tractors/yto-ex1404-canopy/YTO-EX1404-Canopy.jpg" alt="YTO-EX1404 Canopy" /></a></li>
+                              <li className="product_con"><a href="/yto-ex1404-canopy">YTO-EX1404 Canopy</a></li>
+                            </ol>
+                          </li>
+                          <li>
+                            <ol>
+                              <li className="product_img"><a href="/yto-nlx1604-cabin"><img src="/tractors/yto-nlx1604-cabin/YTO-NLX1604-Cabin.jpg" alt="YTO-NLX1604 Cabin" /></a></li>
+                              <li className="product_con"><a href="/yto-nlx1604-cabin">YTO-NLX1604 Cabin</a></li>
                             </ol>
                           </li>
                           <li>
                             <ol>
                               <li className="product_img"><a href="/yto-e2004"><img src="/tractors/yto-e2004/YTO-E2004.jpg" alt="YTO-E2004" /></a></li>
                               <li className="product_con"><a href="/yto-e2004">YTO-E2004</a></li>
-                            </ol>
-                          </li>
-                          <li>
-                            <ol>
-                              <li className="product_img"><a href="/yto-elx2404"><img src="/tractors/yto-elx2404/YTO-ELX2404.jpg" alt="YTO-ELX2404" /></a></li>
-                              <li className="product_con"><a href="/yto-elx2404">YTO-ELX2404</a></li>
                             </ol>
                           </li>
                         </ul>
