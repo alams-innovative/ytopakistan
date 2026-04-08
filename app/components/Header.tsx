@@ -9,10 +9,21 @@ export default function Header() {
     <div id="header">
       <div id="headerin" className="clearfix">
         <div id="etw_logo">
-          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-           <img src="/logo2.png" alt="PTMC" style={{ maxHeight: '90px', width: 'auto' }} />
-           <img src="/logo1.png" alt="YTO" style={{ maxHeight: '90px', width: 'auto' }} />
-             
+          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+            {/* YTO Logo with label */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <img src="/logo1.png" alt="YTO" style={{ height: '110px', width: 'auto', objectFit: 'contain' }} />
+              <span style={{ fontSize: '11px', fontWeight: 600, color: '#c8102e', letterSpacing: '0.5px', marginTop: '4px' }}>YTO GROUP</span>
+            </div>
+            
+            {/* Separator */}
+            <div style={{ width: '2px', height: '80px', background: 'linear-gradient(to bottom, transparent, #c8102e, transparent)' }}></div>
+            
+            {/* PTMC Logo with label */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <img src="/logo2.png" alt="PTMC" style={{ height: '110px', width: 'auto', objectFit: 'contain' }} />
+              <span style={{ fontSize: '11px', fontWeight: 600, color: '#c8102e', letterSpacing: '0.5px', marginTop: '4px' }}>PAK TRACTOR MACHINERY</span>
+            </div>
           </a>
         </div>
         <div className="top-nav">
