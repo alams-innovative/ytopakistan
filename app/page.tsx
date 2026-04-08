@@ -58,48 +58,40 @@ export default function Home() {
               <li>
                 <ol>
                   <li className="product_img">
-                    <a href="/5-tractors">
-                      <img src="/images/pro1.jpg" alt="Tractors" />
-                    </a>
+                    <img src="/images/pro1.jpg" alt="Tractors" />
                   </li>
                   <li className="product_con">
-                    <a href="/5-tractors">Tractors</a>
+                    Tractors
                   </li>
                 </ol>
               </li>
               <li>
                 <ol>
                   <li className="product_img">
-                    <a href="/6-harvesting-equipment">
-                      <img src="/images/pro2.jpg" alt="Harvesting Equipment" />
-                    </a>
+                    <img src="/images/pro2.jpg" alt="Harvesting Equipment" />
                   </li>
                   <li className="product_con">
-                    <a href="/6-harvesting-equipment">Harvesting Equipment</a>
+                    Harvesting Equipment
                   </li>
                 </ol>
               </li>
               <li>
                 <ol>
                   <li className="product_img">
-                    <a href="/7-agricultural-implements">
-                      <img src="/images/pro3.jpg" alt="Agricultural Implements" />
-                    </a>
+                    <img src="/images/pro3.jpg" alt="Agricultural Implements" />
                   </li>
                   <li className="product_con">
-                    <a href="/7-agricultural-implements">Agricultural Implements</a>
+                    Agricultural Implements
                   </li>
                 </ol>
               </li>
               <li>
                 <ol>
                   <li className="product_img">
-                    <a href="/4-engine">
-                      <img src="/images/pro4.jpg" alt="Diesel Engine & Genset" />
-                    </a>
+                    <img src="/images/pro4.jpg" alt="Diesel Engine & Genset" />
                   </li>
                   <li className="product_con">
-                    <a href="/4-engine">Diesel Engine & Genset</a>
+                    Diesel Engine & Genset
                   </li>
                 </ol>
               </li>
@@ -155,7 +147,7 @@ export default function Home() {
         {/* Product Scroller Section */}
         <div className="etw_product_scroller">
           <div className="content">
-            <div className="etw_hometitle">Our Products</div>
+            <div className="etw_hometitle">Tractor Range for Pakistan</div>
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               speed={600}
