@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
-import DistributorCard from '../components/DistributorCard';
 
 export default function Contact() {
   useEffect(() => {
@@ -45,6 +44,7 @@ export default function Contact() {
           <div className="clearfix"></div>
           
           <div className="row">
+            {/* Left Side - Contact Info & Form */}
             <div className="col-12 col-lg-6">
               {/* Contact Information Card */}
               <div className="table-responsive mb-4">
@@ -71,8 +71,12 @@ export default function Contact() {
                 </table>
               </div>
               
-              {/* WhatsApp Button */}
-              <div className="mb-4">
+              {/* Inquiry Form */}
+              <ContactForm showTitle={true} />
+              
+              {/* WhatsApp Button - Under Form */}
+              <div className="mt-4 text-center">
+                <p className="text-muted mb-3" style={{ fontSize: '0.95rem' }}>Or contact us directly via WhatsApp</p>
                 <a 
                   href="https://wa.me/923115997569?text=Hi%2C%20I%20am%20interested%20in%20YTO%20Tractors.%20Please%20provide%20more%20details."
                   target="_blank"
@@ -85,9 +89,11 @@ export default function Contact() {
                   WhatsApp Us
                 </a>
               </div>
-              
-              {/* Google Map */}
-              <div className="google-map-container">
+            </div>
+            
+            {/* Right Side - Google Map */}
+            <div className="col-12 col-lg-6">
+              <div className="google-map-container" style={{ height: '100%', minHeight: '500px' }}>
                 <div className="google-map-header">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -101,6 +107,7 @@ export default function Contact() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="PTMC Location"
+                  style={{ height: 'calc(100% - 100px)', minHeight: '400px' }}
                 ></iframe>
                 <a 
                   href="https://maps.app.goo.gl/C92so1ztScyUm1Ss5" 
@@ -116,14 +123,6 @@ export default function Contact() {
                   Open in Google Maps
                 </a>
               </div>
-            </div>
-            
-            <div className="col-12 col-lg-6">
-              {/* Inquiry Form */}
-              <ContactForm showTitle={true} />
-              
-              {/* Distributor Card */}
-              <DistributorCard />
             </div>
           </div>
           
