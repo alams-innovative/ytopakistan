@@ -61,17 +61,21 @@ export default function Products() {
               
               <div className="etwvideo_hub etwvideo_hub1 mb-4">
                 <ul>
-                  {/* YouTube Video Card 1 */}
+                  {/* YouTube Video Card 1 - Main Video */}
                   <li>
                     <ol>
                       <li className="product_img">
                         <a 
                           onClick={() => setIsVideoModalOpen(true)}
-                          style={{ cursor: 'pointer' }}
+                          style={{ cursor: 'pointer', display: 'block', position: 'relative' }}
                         >
                           <img 
-                            src={thumbnailUrl} 
+                            src="https://img.youtube.com/vi/yZp_XLVrI8k/maxresdefault.jpg"
                             alt="YTO Tractors Video" 
+                            style={{ width: '100%', height: 'auto', display: 'block' }}
+                            onError={(e) => {
+                              e.currentTarget.src = 'https://img.youtube.com/vi/yZp_XLVrI8k/hqdefault.jpg';
+                            }}
                           />
                           <span className="video_btn2"></span>
                         </a>
@@ -93,16 +97,21 @@ export default function Products() {
                   <li>
                     <ol>
                       <li className="product_img">
-                        <a href="/video" style={{ cursor: 'pointer' }}>
+                        <a href="/video" style={{ cursor: 'pointer', display: 'block', position: 'relative' }}>
                           <div style={{ 
                             background: 'linear-gradient(135deg, #e8f4fc 0%, #d1e8f5 100%)', 
-                            aspectRatio: '16/9', 
-                            display: 'flex', 
-                            alignItems: 'center', 
-                            justifyContent: 'center',
+                            width: '100%',
+                            paddingTop: '56.25%',
                             position: 'relative'
                           }}>
-                            <span style={{ color: '#7cb8d9', fontSize: '14px' }}>Video Coming Soon</span>
+                            <span style={{ 
+                              color: '#7cb8d9', 
+                              fontSize: '14px',
+                              position: 'absolute',
+                              top: '50%',
+                              left: '50%',
+                              transform: 'translate(-50%, -50%)'
+                            }}>Video Coming Soon</span>
                           </div>
                           <span className="video_btn2"></span>
                         </a>
@@ -117,16 +126,21 @@ export default function Products() {
                   <li>
                     <ol>
                       <li className="product_img">
-                        <a href="/video" style={{ cursor: 'pointer' }}>
+                        <a href="/video" style={{ cursor: 'pointer', display: 'block', position: 'relative' }}>
                           <div style={{ 
                             background: 'linear-gradient(135deg, #e8f4fc 0%, #d1e8f5 100%)', 
-                            aspectRatio: '16/9', 
-                            display: 'flex', 
-                            alignItems: 'center', 
-                            justifyContent: 'center',
+                            width: '100%',
+                            paddingTop: '56.25%',
                             position: 'relative'
                           }}>
-                            <span style={{ color: '#7cb8d9', fontSize: '14px' }}>Video Coming Soon</span>
+                            <span style={{ 
+                              color: '#7cb8d9', 
+                              fontSize: '14px',
+                              position: 'absolute',
+                              top: '50%',
+                              left: '50%',
+                              transform: 'translate(-50%, -50%)'
+                            }}>Video Coming Soon</span>
                           </div>
                           <span className="video_btn2"></span>
                         </a>
