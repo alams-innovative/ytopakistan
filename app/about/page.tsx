@@ -1,12 +1,7 @@
-'use client';
-
-import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import VideoModal from '../components/VideoModal';
 
 export default function About() {
-  const [showVideo, setShowVideo] = useState(false);
   return (
     <div className="gridContainer clearfix">
       <Header />
@@ -19,7 +14,7 @@ export default function About() {
           <div className="content">
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About YTO</a></li>
+              <li><a href="/about">About PTMC</a></li>
               <li>Company Profile</li>
             </ul>
           </div>
@@ -41,53 +36,63 @@ export default function About() {
                   <div>Company Profile</div>
                 </div>
                 
-                <div className="img_left video_show" onClick={() => setShowVideo(true)} style={{ cursor: 'pointer' }}>
-                  <div className="video_btn1"></div>
-                  <img src="/about/company.jpg" alt="About YTO" />
+                <div className="img_left">
+                  <img src="/about/company.jpg" alt="About PTMC" />
                 </div>
                 
-                <p>YTO Co., Ltd., or YTO, has committed to manufacturing agricultural machinery since 1955, such as, tractors, harvesting equipment, agricultural implements, diesel engines and generator sets. YTO is a major and long-standing agricultural machine manufacturer in China. Its predecessor, China First Tractor Company, was one of the 156 major projects outlined in the First Five-Year Plan (1953-57) and a giant in China&apos;s agricultural industry. After the reshuffle of tractor-related services, manufacturing, assets, liability and personnel, the YTO Co., Ltd. was established in 1997.</p>
+                <p>PTMC (Pak Tractor Machinery Company) is a dynamic and forward-thinking organization dedicated to delivering high-quality agricultural machinery and engineering solutions across Pakistan. With a strong commitment to innovation, reliability, and customer satisfaction, PTMC plays a vital role in supporting the country&apos;s agricultural and industrial development.</p>
                 
-                <p>YTO is a listed company that issues both A shares and H shares in the agricultural machinery industry. It got listed on the Hong Kong Stock Exchange on June 23, 1997 and began to issue H shares. On August 8, 2012, its shares started to be traded on the Shanghai Stock Exchange. The success in the stock market is partly contributed to our reliable products. We manufacture agricultural machinery in accordance with international standards and we are certified to ISO 9001, ISO 14001 and OHSAS 18001. With its quality products, YTO has been awarded as China&apos;s Quality Control Top Brand.</p>
+                <p>Established with a vision to modernize farming practices, PTMC specializes in the distribution, support, and servicing of advanced machinery, including tractors, implements, and related equipment. The company works closely with globally recognized manufacturers to ensure that customers receive durable, efficient, and cost-effective solutions tailored to local needs.</p>
                 
-                <p>YTO International Co., Ltd. (hereinafter referred as YTO International) was founded in 1995 as a subsidiary of the YTO Group. It is an international trading company that has been granted the self-managed import and export right by the Ministry of Commerce. YTO International is responsible for importing and exporting complete products, accessories and manufacturing technology provided by YTO.</p>
+                <p>At PTMC, quality and performance are at the core of every operation. The company emphasizes strict standards in product selection, technical support, and after-sales service. Its team of skilled professionals ensures that clients receive expert guidance, timely maintenance, and reliable spare parts availability.</p>
                 
-                <p>Proud of nearly a hundred production lines, YTO enjoys strong production capacity of forging, processing, assembly and testing. It specializes in Dongfanghong series of crawler tractors, wheeled tractors, diesel engines, harvesting equipment and agricultural machinery. Global service network provides strong services and supports to foreign clients. Thanks to the continuous development of machines and accessories and the professional service team, YTO has seen a long-term exporting success with stable sales volume.</p>
+                <p>Driven by integrity and long-term partnerships, PTMC continues to expand its footprint by building trust with farmers, contractors, and businesses nationwide. The company&apos;s mission is to empower its customers with modern technology, enhance productivity, and contribute to the sustainable growth of Pakistan&apos;s agricultural sector.</p>
+                
+                {/* Vision & Mission Section */}
+                <div className="etw_hometitle mt-4">
+                  <div>Our Vision</div>
+                </div>
+                <p>To become a leading provider of agricultural and industrial machinery solutions in Pakistan, recognized for excellence, innovation, and customer trust.</p>
+                
+                <div className="etw_hometitle mt-4">
+                  <div>Our Mission</div>
+                </div>
+                <p>To deliver high-quality machinery, reliable services, and innovative solutions that enhance productivity and support sustainable development.</p>
                 
                 <ul className="text_item mb-4">
                   <li>
                     <ol>
-                      <li className="pro_img"><img src="/images/icon01.jpg" alt="1st" /></li>
+                      <li className="pro_img"><img src="/images/icon01.jpg" alt="Quality" /></li>
                       <li className="pro_txt">
-                        <span>1st </span>
-                        YTO is the leading agricultural machinery manufacturer in China.
+                        <span>Quality</span>
+                        PTMC emphasizes strict standards in product selection, technical support, and after-sales service for all agricultural machinery.
                       </li>
                     </ol>
                   </li>
                   <li>
                     <ol>
-                      <li className="pro_img"><img src="/images/icon02.jpg" alt="1955" /></li>
+                      <li className="pro_img"><img src="/images/icon02.jpg" alt="Innovation" /></li>
                       <li className="pro_txt">
-                        <span>1955</span>
-                        Founded in Luoyang, YTO is the first tractor manufacturer in new China, which laid a solid foundation for China&apos;s agricultural machinery development and agricultural mechanization.
+                        <span>Innovation</span>
+                        Committed to modernizing farming practices across Pakistan with advanced machinery and engineering solutions.
                       </li>
                     </ol>
                   </li>
                   <li>
                     <ol>
-                      <li className="pro_img"><img src="/images/icon03.jpg" alt="360+310" /></li>
+                      <li className="pro_img"><img src="/images/icon03.jpg" alt="Nationwide" /></li>
                       <li className="pro_txt">
-                        <span>360+310</span>
-                        YTO has made a valuable contribution to China&apos;s agriculture industry development as it has supplied more than 3,600,000 tractors and 3,100,000 diesel engines.
+                        <span>Nationwide</span>
+                        Building trust with farmers, contractors, and businesses across Pakistan through reliable service and support.
                       </li>
                     </ol>
                   </li>
                   <li>
                     <ol>
-                      <li className="pro_img"><img src="/images/icon04.jpg" alt="A+H" /></li>
+                      <li className="pro_img"><img src="/images/icon04.jpg" alt="Partnership" /></li>
                       <li className="pro_txt">
-                        <span>A+H</span>
-                        YTO Co., Ltd., the largest subsidiary of the YTO Group, is listed on the Hong Kong Stock Exchange and Shanghai Stock Exchange and it is the first company in the agricultural machinery industry that issues both A shares and H shares.
+                        <span>Partnership</span>
+                        Working closely with globally recognized manufacturers including YTO to deliver durable, efficient, and cost-effective solutions.
                       </li>
                     </ol>
                   </li>
@@ -138,12 +143,12 @@ export default function About() {
           
           {/* Sidebar */}
           <div id="etw_sidebar">
-            <div className="etw_hometitle">About YTO</div>
+            <div className="etw_hometitle">About PTMC</div>
             <div id="etw_productlist">
               <ul>
                 <li><a href="/about" className="dq">Company Profile</a></li>
                 <li><a href="/certificate">Certificates</a></li>
-                <li><a href="/history">History</a></li>
+                <li><a href="/partners">Our Partners</a></li>
               </ul>
               <div className="clearfix"></div>
             </div>
@@ -155,14 +160,6 @@ export default function About() {
       <div className="clearfix"></div>
       
       <Footer />
-
-      {/* Video Modal */}
-      <VideoModal
-        isOpen={showVideo}
-        onClose={() => setShowVideo(false)}
-        videoUrl="/videos/yto-company-video.mp4"
-        title="YTO Company Video"
-      />
     </div>
   );
 }

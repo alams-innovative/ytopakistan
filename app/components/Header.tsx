@@ -19,9 +19,9 @@ export default function Header() {
           <nav className="navbar">
             <ul className="navbar-nav">
               <li className="nav-item dropdown">
-                <a href="/about" className="nav-link dropdown-toggle">About YTO</a>
+                <a href="/about-yto" className="nav-link dropdown-toggle">About YTO</a>
                 <ul className="dropdown-menu">
-                  <li><a href="/about" className="dropdown-item">Company Profile</a></li>
+                  <li><a href="/about-yto" className="dropdown-item">Company Profile</a></li>
                   <li><a href="/history" className="dropdown-item">History</a></li>
                   <li><a href="/capabilities" className="dropdown-item">Capabilities</a></li>
                 </ul>
