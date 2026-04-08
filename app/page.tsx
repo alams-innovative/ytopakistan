@@ -65,9 +65,6 @@ export default function Home() {
                   <li className="product_con">
                     <a href="/5-tractors">Tractors</a>
                   </li>
-                  <div className="more">
-                    <a href="/5-tractors">Read More</a>
-                  </div>
                 </ol>
               </li>
               <li>
@@ -80,9 +77,6 @@ export default function Home() {
                   <li className="product_con">
                     <a href="/6-harvesting-equipment">Harvesting Equipment</a>
                   </li>
-                  <div className="more">
-                    <a href="/6-harvesting-equipment">Read More</a>
-                  </div>
                 </ol>
               </li>
               <li>
@@ -95,9 +89,6 @@ export default function Home() {
                   <li className="product_con">
                     <a href="/7-agricultural-implements">Agricultural Implements</a>
                   </li>
-                  <div className="more">
-                    <a href="/7-agricultural-implements">Read More</a>
-                  </div>
                 </ol>
               </li>
               <li>
@@ -110,9 +101,6 @@ export default function Home() {
                   <li className="product_con">
                     <a href="/4-engine">Diesel Engine & Genset</a>
                   </li>
-                  <div className="more">
-                    <a href="/4-engine">Read More</a>
-                  </div>
                 </ol>
               </li>
             </ul>
