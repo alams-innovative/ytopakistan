@@ -58,7 +58,7 @@ export default function Products() {
                 <ul>
                   <li>
                     <ol>
-                      <li className="product_img"><a href="/5-tractors"><img src="/tractors-dropdown/YTO-EX1254-Cabin.png" alt="Tractors" /></a></li>
+                      <li className="product_img"><a href="/5-tractors"><img src="/images/products-tractor.jpg" alt="Tractors" /></a></li>
                       <li className="product_con"><a href="/5-tractors">Tractors</a> <span>YTO, an advanced agricultural machinery supplier, provides different types of utility tractors, compact tractors and narrow tractors to suit various needs.</span> </li>
                       <div className="more2"><a href="/5-tractors">Read More</a></div>
                     </ol>
