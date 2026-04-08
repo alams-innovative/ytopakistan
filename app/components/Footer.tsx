@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="col-12 col-lg-4">
               <div className="bottom_logo">
                 <div style={{ marginBottom: '1.5rem' }}>
-                  <img src="/logo2.png" alt="PTMC" style={{ maxHeight: '120px', width: 'auto', marginBottom: '1rem' }} />
+                  <img src="/logo2.png" alt="YTO" style={{ maxHeight: '120px', width: 'auto', marginBottom: '1rem' }} />
                 </div>
                 <div className="contact_info">
                   <p><strong>Address:</strong><br />
@@ -49,8 +49,11 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-
-
+            <div className="col-12 col-md-6 col-lg-3">
+              <div className="footer-ptmc-logo" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', height: '100%', paddingTop: '1rem' }}>
+                <img src="/images/ptmc-logo-white.png" alt="Pak Tractor Manufacturing Company" style={{ maxWidth: '100%', height: 'auto', maxHeight: '80px' }} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

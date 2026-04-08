@@ -3530,11 +3530,15 @@ ul.discitem3 span {
   width: 100%;
 }
 
-.etwvideo_hub ul > li > ol > li.product_img img {
+.etwvideo_hub ul > li > ol > li.product_img img,
+.video-thumbnail {
   width: 100%;
   height: auto;
   display: block;
   transition: all 0.3s ease;
+  border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }
 
 .etwvideo_hub ul > li:hover .product_img img {
@@ -6182,6 +6186,37 @@ ul.item li:before {
   /* Video cards mobile */
   .etwvideo_hub ul > li {
     width: 100%;
+  }
+  
+  .etwvideo_hub ul > li > ol {
+    flex-direction: column;
+  }
+  
+  .etwvideo_hub ul > li > ol > li.product_img,
+  .etwvideo_hub1 ul > li > ol > li.product_img {
+    width: 100%;
+  }
+  
+  .etwvideo_hub ul > li > ol > li.product_con,
+  .etwvideo_hub1 ul > li > ol > li.product_con {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .video-thumbnail {
+    max-height: 220px;
+    object-fit: cover;
+  }
+  
+  .video_btn2 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .video_btn2:after {
+    border-left: 14px solid #fff;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
   }
   
   /* Product detail page mobile */

@@ -97,12 +97,9 @@ export default function Videos() {
                         style={{ cursor: 'pointer', display: 'block', position: 'relative' }}
                       >
                         <img 
-                          src="https://img.youtube.com/vi/yZp_XLVrI8k/maxresdefault.jpg"
-                          alt="YTO Tractors Video" 
-                          style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }}
-                          onError={(e) => {
-                            e.currentTarget.src = 'https://img.youtube.com/vi/yZp_XLVrI8k/hqdefault.jpg';
-                          }}
+                          src="/images/yto-x854-canopy-video.png"
+                          alt="YTO X854 Tractor Canopy Video" 
+                          className="video-thumbnail"
                         />
                         <span className="video_btn2"></span>
                       </a>
@@ -112,48 +109,62 @@ export default function Videos() {
                         onClick={() => openVideoModal('yZp_XLVrI8k')} 
                         style={{ cursor: 'pointer', fontWeight: 'bold' }}
                       >
-                        Product Video 1
+                        YTO X854 Tractor Canopy
                       </a>
-                      <span>Watch YTO tractors performing in real agricultural conditions. Experience the quality and reliability firsthand.</span>
+                      <span>Watch the YTO X854 tractor with front loader demonstrating its versatility and power in construction and material handling applications.</span>
                     </li>
                   </ol>
                 </li>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <div className="video-placeholder" style={{ 
-                        background: '#f5f5f5', 
-                        display: 'flex', 
-                        alignItems: 'center', 
-                        justifyContent: 'center',
-                        minHeight: '150px',
-                        border: '2px dashed #ccc',
-                        borderRadius: '8px'
-                      }}>
-                        <div className="video_btn2"></div>
-                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
-                      </div>
+                      <a 
+                        onClick={() => openVideoModal('GnQBosin0GU')}
+                        style={{ cursor: 'pointer', display: 'block', position: 'relative' }}
+                      >
+                        <img 
+                          src="/images/yto-ex1054-canopy-video.png"
+                          alt="YTO EX 1054 Tractor Canopy Video" 
+                          className="video-thumbnail"
+                        />
+                        <span className="video_btn2"></span>
+                      </a>
                     </li>
-                    <li className="product_con">Product Video 2</li>
+                    <li className="product_con">
+                      <a 
+                        onClick={() => openVideoModal('GnQBosin0GU')} 
+                        style={{ cursor: 'pointer', fontWeight: 'bold' }}
+                      >
+                        YTO EX 1054 Tractor Canopy
+                      </a>
+                      <span>Watch the YTO EX 1054 tractor with canopy in action, demonstrating powerful performance in real field conditions.</span>
+                    </li>
                   </ol>
                 </li>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <div className="video-placeholder" style={{ 
-                        background: '#f5f5f5', 
-                        display: 'flex', 
-                        alignItems: 'center', 
-                        justifyContent: 'center',
-                        minHeight: '150px',
-                        border: '2px dashed #ccc',
-                        borderRadius: '8px'
-                      }}>
-                        <div className="video_btn2"></div>
-                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
-                      </div>
+                      <a 
+                        onClick={() => openVideoModal('KbjjIIDnQmY')}
+                        style={{ cursor: 'pointer', display: 'block', position: 'relative' }}
+                      >
+                        <img 
+                          src="/images/yto-x1204-action-video.png"
+                          alt="YTO X1204 Tractor in Action Video" 
+                          className="video-thumbnail"
+                        />
+                        <span className="video_btn2"></span>
+                      </a>
                     </li>
-                    <li className="product_con">Product Video 3</li>
+                    <li className="product_con">
+                      <a 
+                        onClick={() => openVideoModal('KbjjIIDnQmY')} 
+                        style={{ cursor: 'pointer', fontWeight: 'bold' }}
+                      >
+                        YTO X1204 Tractor in Action
+                      </a>
+                      <span>See the powerful YTO X1204 tractor with rotavator working in real field conditions, demonstrating exceptional tilling performance for Pakistani farmers.</span>
+                    </li>
                   </ol>
                 </li>
               </ul>
