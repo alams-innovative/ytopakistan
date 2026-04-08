@@ -144,20 +144,27 @@ export default function Videos() {
                 <li>
                   <ol>
                     <li className="product_img">
-                      <div className="video-placeholder" style={{ 
-                        background: '#f5f5f5', 
-                        display: 'flex', 
-                        alignItems: 'center', 
-                        justifyContent: 'center',
-                        minHeight: '150px',
-                        border: '2px dashed #ccc',
-                        borderRadius: '8px'
-                      }}>
-                        <div className="video_btn2"></div>
-                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
-                      </div>
+                      <a 
+                        onClick={() => openVideoModal('KbjjIIDnQmY')}
+                        style={{ cursor: 'pointer', display: 'block', position: 'relative' }}
+                      >
+                        <img 
+                          src="/images/yto-x1204-action-video.png"
+                          alt="YTO X1204 Tractor in Action Video" 
+                          className="video-thumbnail"
+                        />
+                        <span className="video_btn2"></span>
+                      </a>
                     </li>
-                    <li className="product_con">Product Video 3</li>
+                    <li className="product_con">
+                      <a 
+                        onClick={() => openVideoModal('KbjjIIDnQmY')} 
+                        style={{ cursor: 'pointer', fontWeight: 'bold' }}
+                      >
+                        YTO X1204 Tractor in Action
+                      </a>
+                      <span>See the powerful YTO X1204 tractor with rotavator working in real field conditions, demonstrating exceptional tilling performance for Pakistani farmers.</span>
+                    </li>
                   </ol>
                 </li>
               </ul>
