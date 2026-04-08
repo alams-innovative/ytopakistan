@@ -46,20 +46,29 @@ export default function Videos() {
             
             <div className="clearfix"></div>
             
-            <div className="protitle1"><span>Company Videos</span></div>
+            {/* Section 1: About Company (Main Video) */}
+            <div className="protitle1"><span>About Company</span></div>
             <div className="etwvideo_hub etwvideo_hub1 mb-4">
               <ul>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <a href="/video/company-profile">
+                      <div className="video-placeholder" style={{ 
+                        background: '#f5f5f5', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        minHeight: '200px',
+                        border: '2px dashed #ccc',
+                        borderRadius: '8px'
+                      }}>
                         <div className="video_btn2"></div>
-                        <img src="/images/video01.jpg" alt="Company Profile" />
-                      </a>
+                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
+                      </div>
                     </li>
                     <li className="product_con">
-                      <a href="/video/company-profile">Company Profile</a>
-                      <span>YTO Co., Ltd., or YTO, has committed to manufacturing agricultural machinery since 1955, such as, tractors, harvesting equipment, agricultural implements, diesel engines and generator sets. YTO is a major and long-standing agricultural machine manufacturer in China. Its predecessor, China First Tractor Company, was one of the 156 major projects outlined in the First Five-Year Plan (1953-57) and a giant in China's agricultural industry.</span>
+                      <span className="video-section-title" style={{ fontWeight: 'bold', fontSize: '16px' }}>PTMC Company Profile</span>
+                      <span>PTMC (Pak Tractor Machinery Company) is a dynamic and forward-thinking organization dedicated to delivering high-quality agricultural machinery and engineering solutions across Pakistan. With a strong commitment to innovation, reliability, and customer satisfaction.</span>
                     </li>
                   </ol>
                 </li>
@@ -68,139 +77,131 @@ export default function Videos() {
             
             <div className="clearfix"></div>
             
-            <div className="protitle1"><span>Product Videos</span></div>
+            {/* Section 2: About Products */}
+            <div className="protitle1"><span>About Products</span></div>
             <div className="etwvideo_hub mb-4">
               <ul>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <a href="/video/yto-tractor-in-pakistan">
+                      <div className="video-placeholder" style={{ 
+                        background: '#f5f5f5', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        minHeight: '150px',
+                        border: '2px dashed #ccc',
+                        borderRadius: '8px'
+                      }}>
                         <div className="video_btn2"></div>
-                        <img src="/images/video02.jpg" alt="YTO Tractor in Pakistan" />
-                      </a>
+                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
+                      </div>
                     </li>
-                    <li className="product_con"><a href="/video/yto-tractor-in-pakistan">YTO Tractor in Pakistan</a></li>
+                    <li className="product_con">Product Video 1</li>
                   </ol>
                 </li>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <a href="/video/yto-tractor-in-ukrain">
+                      <div className="video-placeholder" style={{ 
+                        background: '#f5f5f5', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        minHeight: '150px',
+                        border: '2px dashed #ccc',
+                        borderRadius: '8px'
+                      }}>
                         <div className="video_btn2"></div>
-                        <img src="/images/video03.jpg" alt="YTO Tractor in Ukrain" />
-                      </a>
+                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
+                      </div>
                     </li>
-                    <li className="product_con"><a href="/video/yto-tractor-in-ukrain">YTO Tractor in Ukrain</a></li>
+                    <li className="product_con">Product Video 2</li>
                   </ol>
                 </li>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <a href="/video/tractor">
+                      <div className="video-placeholder" style={{ 
+                        background: '#f5f5f5', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        minHeight: '150px',
+                        border: '2px dashed #ccc',
+                        borderRadius: '8px'
+                      }}>
                         <div className="video_btn2"></div>
-                        <img src="/images/video04.jpg" alt="LF2204 Tractor" />
-                      </a>
+                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
+                      </div>
                     </li>
-                    <li className="product_con"><a href="/video/tractor">LF2204 Tractor</a></li>
+                    <li className="product_con">Product Video 3</li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="clearfix"></div>
+            
+            {/* Section 3: Testimonials */}
+            <div className="protitle1"><span>Testimonials</span></div>
+            <div className="etwvideo_hub mb-4">
+              <ul>
+                <li>
+                  <ol>
+                    <li className="product_img">
+                      <div className="video-placeholder" style={{ 
+                        background: '#f5f5f5', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        minHeight: '150px',
+                        border: '2px dashed #ccc',
+                        borderRadius: '8px'
+                      }}>
+                        <div className="video_btn2"></div>
+                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
+                      </div>
+                    </li>
+                    <li className="product_con">Customer Testimonial 1</li>
                   </ol>
                 </li>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <a href="/video/tractor-in-ploughing-operation">
+                      <div className="video-placeholder" style={{ 
+                        background: '#f5f5f5', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        minHeight: '150px',
+                        border: '2px dashed #ccc',
+                        borderRadius: '8px'
+                      }}>
                         <div className="video_btn2"></div>
-                        <img src="/images/video05.jpg" alt="LK1204 Tractor in Ploughing Operation" />
-                      </a>
+                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
+                      </div>
                     </li>
-                    <li className="product_con"><a href="/video/tractor-in-ploughing-operation">LK1204 Tractor in Ploughing Operation</a></li>
+                    <li className="product_con">Customer Testimonial 2</li>
                   </ol>
                 </li>
                 <li>
                   <ol>
                     <li className="product_img">
-                      <a href="/video/features-of-tractor">
+                      <div className="video-placeholder" style={{ 
+                        background: '#f5f5f5', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        minHeight: '150px',
+                        border: '2px dashed #ccc',
+                        borderRadius: '8px'
+                      }}>
                         <div className="video_btn2"></div>
-                        <img src="/images/video06.jpg" alt="Features of LW3204 Tractor" />
-                      </a>
+                        <span style={{ color: '#666', fontSize: '14px' }}>Video Coming Soon</span>
+                      </div>
                     </li>
-                    <li className="product_con"><a href="/video/features-of-tractor">Features of LW3204 Tractor</a></li>
-                  </ol>
-                </li>
-                <li>
-                  <ol>
-                    <li className="product_img">
-                      <a href="/video/driverless-tractor-in-test">
-                        <div className="video_btn2"></div>
-                        <img src="/images/video07.jpg" alt="LY1104-C Driverless Tractor in Test" />
-                      </a>
-                    </li>
-                    <li className="product_con"><a href="/video/driverless-tractor-in-test">LY1104-C Driverless Tractor in Test</a></li>
-                  </ol>
-                </li>
-                <li>
-                  <ol>
-                    <li className="product_img">
-                      <a href="/video/driverless-tractor-in-operation">
-                        <div className="video_btn2"></div>
-                        <img src="/images/video08.jpg" alt="LY1104-C Driverless Tractor in Operation" />
-                      </a>
-                    </li>
-                    <li className="product_con"><a href="/video/driverless-tractor-in-operation">LY1104-C Driverless Tractor in Operation</a></li>
-                  </ol>
-                </li>
-                <li>
-                  <ol>
-                    <li className="product_img">
-                      <a href="/video/immersive-video-of-tractor">
-                        <div className="video_btn2"></div>
-                        <img src="/images/video09.jpg" alt="Immersive Video of Tractor" />
-                      </a>
-                    </li>
-                    <li className="product_con"><a href="/video/immersive-video-of-tractor">Immersive Video of Tractor</a></li>
-                  </ol>
-                </li>
-                <li>
-                  <ol>
-                    <li className="product_img">
-                      <a href="/video/the-most-advanced-driverless-tractor">
-                        <div className="video_btn2"></div>
-                        <img src="/images/video10.jpg" alt="The Most Advanced Driverless Tractor of YTO" />
-                      </a>
-                    </li>
-                    <li className="product_con"><a href="/video/the-most-advanced-driverless-tractor">The Most Advanced Driverless Tractor of YTO</a></li>
-                  </ol>
-                </li>
-                <li>
-                  <ol>
-                    <li className="product_img">
-                      <a href="/video/tractor-with-newly-designed-cab">
-                        <div className="video_btn2"></div>
-                        <img src="/images/video11.jpg" alt="ME504-5 Tractor with Newly Designed Cab" />
-                      </a>
-                    </li>
-                    <li className="product_con"><a href="/video/tractor-with-newly-designed-cab">ME504-5 Tractor with Newly Designed Cab</a></li>
-                  </ol>
-                </li>
-                <li>
-                  <ol>
-                    <li className="product_img">
-                      <a href="/video/mf704-tractor-with-newly-designde-cab">
-                        <div className="video_btn2"></div>
-                        <img src="/images/video12.jpg" alt="MF704-7 Tractor with Newly Designed Cab" />
-                      </a>
-                    </li>
-                    <li className="product_con"><a href="/video/mf704-tractor-with-newly-designde-cab">MF704-7 Tractor with Newly Designed Cab</a></li>
-                  </ol>
-                </li>
-                <li>
-                  <ol>
-                    <li className="product_img">
-                      <a href="/video/nlx1404-1utility-tractor">
-                        <div className="video_btn2"></div>
-                        <img src="/images/video13.jpg" alt="YTO X1304-1/NLX1404-1 Utility Tractor" />
-                      </a>
-                    </li>
-                    <li className="product_con"><a href="/video/nlx1404-1utility-tractor">YTO X1304-1/NLX1404-1 Utility Tractor</a></li>
+                    <li className="product_con">Customer Testimonial 3</li>
                   </ol>
                 </li>
               </ul>
