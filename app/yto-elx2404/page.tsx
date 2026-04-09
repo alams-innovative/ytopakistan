@@ -7,6 +7,7 @@ import ImageModal from '../components/ImageModal';
 import InquiryModal from '../components/InquiryModal';
 import ProductSidebar from '../components/ProductSidebar';
 import ContactForm from '../components/ContactForm';
+import RelatedProducts from '../components/RelatedProducts';
 
 export default function TractorDetail() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -216,20 +217,7 @@ export default function TractorDetail() {
                           </div>
                         </div>
                       
-                        <div className="etw_title1">Related Products</div>
-                        <div className="etw_related">
-                          <ul>
-                            <li><a href="/yto-esk550">YTO-ESK550</a></li>
-                            <li><a href="/yto-ef804">YTO-EF804</a></li>
-                            <li><a href="/yto-ex1054">YTO-EX1054</a></li>
-                            <li><a href="/yto-x1204">YTO-X1204</a></li>
-                            <li><a href="/yto-ex1254">YTO-EX1254</a></li>
-                            <li><a href="/yto-ex1404">YTO-EX1404</a></li>
-                            <li><a href="/yto-nlx1604">YTO-NLX1604</a></li>
-                            <li><a href="/yto-e2004">YTO-E2004</a></li>
-                            <li><a href="/yto-elx2404">YTO-ELX2404</a></li>
-                          </ul>
-                        </div>
+                        <RelatedProducts />
                         <div className="clearfix"></div>
                         
                         <ContactForm productName="YTO-ELX2404" showTitle={true} />

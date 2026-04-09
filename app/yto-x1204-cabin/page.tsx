@@ -288,7 +288,7 @@ export default function TractorDetail() {
                           <DistributorCard />
                         </div>
                       
-                        <RelatedProducts currentProduct="YTO-X1204" />
+                        <RelatedProducts currentProduct="YTO-X1204 Cabin" />
                         <div className="clearfix"></div>
                         
                         <ContactForm productName="YTO-X1204 Cabin" showTitle={true} />

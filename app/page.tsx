@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -303,25 +304,25 @@ export default function Home() {
         <div className="etw_mainbody" id="about">
           <div className="content">
             <div className="etw_hometitle">
-              <a href="/about">YTO Group</a>
+              <a href="/about-yto">YTO Group</a>
             </div>
             <ul>
               <li>
-                <ol>
-                  <li className="pro_img">
-                    <a href="/about">
+                <Link href="/about-yto" className="etw-mainbody-about-yto-card">
+                  <ol>
+                    <li className="pro_img">
                       <img src="/images/company.jpg" alt="About YTO" />
-                    </a>
-                  </li>
-                  <li className="pro_txt">
-                    <a href="/about">About YTO</a>
-                    <span>
-                      YTO Group Corporation (hereinafter referred to as YTO) is a comprehensive enterprise 
-                      group mainly engaged in machinery manufacturing under China National Machinery Industry 
-                      Corporation Ltd (Sinomach) which is Top 500 enterprises in the world.
-                    </span>
-                  </li>
-                </ol>
+                    </li>
+                    <li className="pro_txt">
+                      <span className="pro_txt-heading">About YTO</span>
+                      <span>
+                        YTO Group Corporation (hereinafter referred to as YTO) is a comprehensive enterprise 
+                        group mainly engaged in machinery manufacturing under China National Machinery Industry 
+                        Corporation Ltd (Sinomach) which is Top 500 enterprises in the world.
+                      </span>
+                    </li>
+                  </ol>
+                </Link>
               </li>
               <li>
                 <ol>
@@ -356,21 +357,20 @@ export default function Home() {
             </ul>
             <div className="clearfix"></div>
             <ul className="contact_item">
-              <li>
-                <a href="/video">
-                  <img src="/images/group03.jpg" alt="YTO Machinery in the World" />
-                  <span>YTO Machinery in the World</span>
-                </a>
+              <li className="contact-item-static-wrap">
+                <div className="contact-item-static">
+                  <img src="/images/yto-machinery-world.png" alt="" />
+                </div>
               </li>
-              <li>
-                <a href="/contact">
-                  <img src="/images/email.jpg" alt="Visit and Contact Us" />
+              <li className="contact-item-link-wrap">
+                <a href="/contact" className="contact-item-link contact-item-link--contact">
+                  <img src="/images/email.jpg" alt="" />
                   <span>Visit and Contact Us</span>
                 </a>
               </li>
-              <li>
-                <a href="/video">
-                  <img src="/images/video.jpg" alt="Video Show" />
+              <li className="contact-item-link-wrap">
+                <a href="/video" className="contact-item-link contact-item-link--video">
+                  <img src="/images/video.jpg" alt="" />
                   <span>Video Show</span>
                 </a>
               </li>

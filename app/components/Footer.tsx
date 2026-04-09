@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 col-lg-4">
               <div className="bottom_logo">
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <img src="/logo2.png" alt="YTO" style={{ maxHeight: '120px', width: 'auto', marginBottom: '1rem' }} />
+                <div className="footer-logo-top">
+                  <img src="/logo2.png" alt="YTO" className="footer-logo-yto" />
                 </div>
                 <div className="contact_info">
                   <p><strong>Address:</strong><br />
@@ -34,24 +34,23 @@ export default function Footer() {
                 <li><a href="/service">Service & Support</a></li>
               </ul>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-6">
               <div className="pro_contact">
-                <div className="etw_hometitle">
-                  <a href="/products">Products</a>
+                <div className="footer-products-heading-row">
+                  <div className="footer-products-text-block">
+                    <div className="etw_hometitle">
+                      <a href="/products">Products</a>
+                    </div>
+                    <ul>
+                      <li><a href="/5-tractors">Tractors</a></li>
+                    </ul>
+                  </div>
+                  <img
+                    src="/images/ptmc-logo-transparent.png"
+                    alt="Pak Tractor Manufacturing Company"
+                    className="footer-products-ptmc-logo"
+                  />
                 </div>
-                <ul>
-                  <li><a href="/5-tractors">Tractors</a></li>
-                  <li><a href="/6-harvesting-equipment">Harvesting Equipment</a></li>
-                  <li><a href="/7-agricultural-implements">Agricultural Implements</a></li>
-                  <li><a href="/4-engine">Diesel Engine & Genset</a></li>
-                  <li><a href="/4b-diesel-engine-parts">OEM Parts</a></li>
-                  <li><a href="/products-b">1995-2018 Products</a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-3">
-              <div className="footer-ptmc-logo" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', height: '100%', paddingTop: '1rem' }}>
-                <img src="/images/ptmc-logo-white.png" alt="Pak Tractor Manufacturing Company" style={{ maxWidth: '100%', height: 'auto', maxHeight: '80px' }} />
               </div>
             </div>
           </div>

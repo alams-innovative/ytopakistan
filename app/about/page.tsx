@@ -40,7 +40,7 @@ export default function About() {
                   <img src="/about/company.jpg" alt="About PTMC" />
                 </div>
                 
-                <p>PTMC (Pak Tractor Machinery Company) is a dynamic and forward-thinking organization dedicated to delivering high-quality agricultural machinery and engineering solutions across Pakistan. With a strong commitment to innovation, reliability, and customer satisfaction, PTMC plays a vital role in supporting the country&apos;s agricultural and industrial development.</p>
+                <p>PTMC (Pak Tractor Manufacturing Company) is a dynamic and forward-thinking organization dedicated to delivering high-quality agricultural machinery and engineering solutions across Pakistan. With a strong commitment to innovation, reliability, and customer satisfaction, PTMC plays a vital role in supporting the country&apos;s agricultural and industrial development.</p>
                 
                 <p>Established with a vision to modernize farming practices, PTMC specializes in the distribution, support, and servicing of advanced machinery, including tractors, implements, and related equipment. The company works closely with globally recognized manufacturers to ensure that customers receive durable, efficient, and cost-effective solutions tailored to local needs.</p>
                 

@@ -52,16 +52,26 @@ export default function Contact() {
             
             {/* Right Side - Google Map */}
             <div className="contact-map-side">
+              <p className="contact-map-intro">
+                <a
+                  href="https://maps.app.goo.gl/jdQqsYWKJbYyfszh8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-map-pin-link"
+                >
+                  Google Maps pin — PTMC Lahore
+                </a>
+              </p>
               <div className="contact-map-wrapper">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.4754055744567!2d74.32276!3d31.45247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190145ae93ab97%3A0x72c098e47c3b07fe!2sPak%20Tractor%20Manufacturing%20Company!5e0!3m2!1sen!2spk!4v1712600000000!5m2!1sen!2spk"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Pak Tractor Manufacturing Company - Location"
+                  title="Pak Tractor Manufacturing Company — Google Maps location"
                 ></iframe>
                 <a 
-                  href="https://maps.app.goo.gl/rmp1C8ELhir1Hv6s7" 
+                  href="https://maps.app.goo.gl/jdQqsYWKJbYyfszh8" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="map-directions-btn"

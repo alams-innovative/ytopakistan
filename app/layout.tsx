@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Agricultural Machinery Supplier | YTO",
   description: "YTO, a leading agricultural machinery supplier in China, provides a complete range of tractors, harvesting equipment and agricultural implements.",
   keywords: "Tractors, harvesting equipment, agricultural machine, agricultural implements",
-    generator: 'v0.app'
+  generator: "v0.app",
 };
 
 export default function RootLayout({
