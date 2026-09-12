@@ -65,7 +65,7 @@ export default function Header() {
           <nav className="navbar">
             <ul className="navbar-nav">
               <li className="nav-item dropdown">
-                <a href="/about-yto" className="nav-link dropdown-toggle">About YTO</a>
+                <a href="/about-yto" className="nav-link dropdown-toggle">YTO</a>
                 <ul className="dropdown-menu">
                   <li><a href="/about-yto" className="dropdown-item">Company Profile</a></li>
                   <li><a href="/history" className="dropdown-item">History</a></li>
@@ -73,13 +73,8 @@ export default function Header() {
                 </ul>
               </li>
               
-              <li className="nav-item dropdown">
-                <a href="/about" className="nav-link dropdown-toggle">About PTMC</a>
-                <ul className="dropdown-menu">
-                  <li><a href="/about" className="dropdown-item">Company Profile</a></li>
-                  <li><a href="/certificate" className="dropdown-item">Certificates</a></li>
-                  <li><a href="/partners" className="dropdown-item">Our Partners</a></li>
-                </ul>
+              <li className="nav-item">
+                <a href="/about" className="nav-link">PTMC</a>
               </li>
               
               <li className="nav-item dropdown dropdown-products">
@@ -186,7 +181,7 @@ export default function Header() {
                 <a href="/service" className="nav-link">Service & Support</a>
               </li>
               <li className="nav-item">
-                <a href="/video" className="nav-link">Videos</a>
+                <a href="/gallery" className="nav-link">Gallery</a>
               </li>
               <li className="nav-item">
                 <a href="/contact" className="nav-link">Contact</a>
@@ -203,7 +198,7 @@ export default function Header() {
           <ul className="mobile-nav-list">
             <li className="mobile-nav-item">
               <div className="mobile-nav-header" onClick={() => toggleMobileSubmenu('yto')}>
-                <span>About YTO</span>
+                <span>YTO</span>
                 <svg className={`chevron ${mobileSubmenu === 'yto' ? 'rotate' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
@@ -216,17 +211,7 @@ export default function Header() {
             </li>
             
             <li className="mobile-nav-item">
-              <div className="mobile-nav-header" onClick={() => toggleMobileSubmenu('ptmc')}>
-                <span>About PTMC</span>
-                <svg className={`chevron ${mobileSubmenu === 'ptmc' ? 'rotate' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-              <ul className={`mobile-submenu ${mobileSubmenu === 'ptmc' ? 'active' : ''}`}>
-                <li><a href="/about" onClick={() => setMobileMenuOpen(false)}>Company Profile</a></li>
-                <li><a href="/certificate" onClick={() => setMobileMenuOpen(false)}>Certificates</a></li>
-                <li><a href="/partners" onClick={() => setMobileMenuOpen(false)}>Our Partners</a></li>
-              </ul>
+              <a href="/about" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>PTMC</a>
             </li>
             
             <li className="mobile-nav-item">
@@ -255,7 +240,7 @@ export default function Header() {
             </li>
             
             <li className="mobile-nav-item">
-              <a href="/video" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Videos</a>
+              <a href="/gallery" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Gallery</a>
             </li>
             
             <li className="mobile-nav-item">

@@ -1,0 +1,15 @@
+export const TRACTORS = [
+  { href: '/yto-esk550', name: 'YTO-ESK550' },
+  { href: '/yto-ef804', name: 'YTO-EF804' },
+  { href: '/yto-ex1054-cabin', name: 'YTO-EX1054 Cabin' },
+  { href: '/yto-ex1054-canopy', name: 'YTO-EX1054 Canopy' },
+  { href: '/yto-x1204-cabin', name: 'YTO-X1204 Cabin' },
+  { href: '/yto-x1204-canopy', name: 'YTO-X1204 Canopy' },
+  { href: '/yto-ex1254-cabin', name: 'YTO-EX1254 Cabin' },
+  { href: '/yto-ex1254-canopy', name: 'YTO-EX1254 Canopy' },
+  { href: '/yto-ex1404-cabin', name: 'YTO-EX1404 Cabin' },
+  { href: '/yto-ex1404-canopy', name: 'YTO-EX1404 Canopy' },
+  { href: '/yto-nlx1604-cabin', name: 'YTO-NLX1604 Cabin' },
+  { href: '/yto-e2004', name: 'YTO-E2004' },
+  { href: '/yto-elx2404', name: 'YTO-ELX2404' },
+] as const;

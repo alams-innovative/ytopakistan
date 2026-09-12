@@ -38,8 +38,10 @@ export default function Contact() {
         <div className="clearfix"></div>
         
         <div className="content content_white">
-          <p>YTO Pakistan is the official local presence of YTO Co, Ltd. Delivering advanced agricultural Tractors to the Pakistani market with a strong focus on reliability, performance, and long-term customer support. YTO International, Ltd., a subsidiary of the YTO Group, has established a strong presence in Pakistan, providing high-quality agricultural machinery and equipment to farmers and businesses across the country. The YTO Group offers four pillar products: agricultural equipment, construction machinery, vehicles, and power machinery. With our local office in Lahore, we are committed to serving the Pakistani market with world-class products and comprehensive after-sales support.</p>
-          <p className="mb-4">YTO Pakistan warmly welcomes customers from across Pakistan with sincerity and efficient service. We are dedicated to supporting the agricultural sector in Pakistan with reliable machinery and excellent customer service for a prosperous future.</p>
+          <p>Pak Tractor Manufacturing Company (PTMC) is a trusted provider of high-quality tractors designed to meet the evolving needs of modern agriculture and industry.</p>
+          <p>With a strong commitment to performance, durability, innovation, and service PTMC delivers reliable machinery built to perform in the toughest conditions.</p>
+          <p>Our range of tractors spans 26 to 400 hp power output with allied implements and equipment to make your farming the most efficient it can be.</p>
+          <p className="mb-4">PTMC warmly welcomes customers from across Pakistan with sincerity and efficient service. We are dedicated to supporting the agricultural sector in Pakistan with reliable machinery and excellent customer service for a prosperous future.</p>
           
           <div className="clearfix"></div>
           

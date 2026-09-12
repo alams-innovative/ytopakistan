@@ -148,7 +148,8 @@ export default function Home() {
         {/* Product Scroller Section */}
         <div className="etw_product_scroller">
           <div className="content">
-            <div className="etw_hometitle">Tractor Range for Pakistan</div>
+            <div className="etw_hometitle">PTMC Tractor Range</div>
+            <div className="etw_homesubtitle">Models offered by PTMC in Pakistan</div>
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               speed={600}
@@ -369,9 +370,9 @@ export default function Home() {
                 </a>
               </li>
               <li className="contact-item-link-wrap">
-                <a href="/video" className="contact-item-link contact-item-link--video">
+                <a href="/gallery" className="contact-item-link contact-item-link--video">
                   <img src="/images/video.jpg" alt="" />
-                  <span>Video Show</span>
+                  <span>Gallery</span>
                 </a>
               </li>
             </ul>
