@@ -53,7 +53,7 @@ export default function Service() {
                   <li><img src="/images/ser03.png" alt="Reliably and precisely" /><span>Reliably and precisely</span></li>
                 </ul>
                 <div className="clearfix"></div>
-                <p>YTO has a global distribution network consisting of almost 90 service points, through which our products have been exported to over 100 countries and regions. Besides, we have established R&D and production bases in France, Belarus, Côte d'Ivoire, South Africa, etc. to empower us to quick response to customer needs, as well as provide them after-sales service reliably and precisely.</p>
+                <p>YTO has a global distribution network consisting of almost 90 service points, through which our products have been exported to over 100 countries and regions. Besides, we have established R&D and production bases in France, Belarus, Côte d&apos;Ivoire, South Africa, etc. to empower us to quick response to customer needs, as well as provide them after-sales service reliably and precisely.</p>
                 <p>Pak Tractor Manufacturing Company PTMC, is the official authorized distributer of YTO Tractors in Pakistan. PTMC offers the complete range of service parts and support for YTO Tractors and machines through its extensive network of dealers across Pakistan.</p>
 
                 <div className="service-field-photos">
