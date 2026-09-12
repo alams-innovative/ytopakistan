@@ -28,7 +28,7 @@ export default function History() {
           <div className="content">
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About YTO</a></li>
+              <li><a href="/about-yto">YTO</a></li>
               <li>History</li>
             </ul>
           </div>
@@ -53,20 +53,13 @@ export default function History() {
                   <li>
                     <ol className="align-items-start">
                       <li className="pro_img"><span>2025</span></li>
-                      <li className="pro_txt"><span>Establishment of YTO Pakistan</span>
+                      <li className="pro_txt"><span>Establishment of YTO in Pakistan</span>
                         <ul className="item">
                           <li>YTO officially expanded its presence into Pakistan in 2025.</li>
-                          <li>YTO appoints PTMC as its authorized distributor in Pakistan.</li>
-                          <li>The expansion marks a strategic milestone for YTO in South Asia.</li>
-                          <li>Focus on providing reliable, efficient, and technologically advanced tractors and farming equipment.</li>
-                          <li>Products are tailored to meet the diverse farming conditions across Pakistan.</li>
-                          <li>Emphasis on productivity, durability, and fuel efficiency for farmers and agribusinesses.</li>
-                          <li>YTO Pakistan offers a comprehensive support ecosystem, including technical guidance and after-sales service.</li>
+                          <li>YTO appoints PTMC as its authorized distributor in Pakistan. The expansion marks a strategic milestone for YTO in South Asia.</li>
+                          <li>Focus on providing reliable, efficient, and technologically advanced tractors and farming equipment tailored to meet the diverse farming conditions across Pakistan.</li>
+                          <li>YTO offers through PTMC a comprehensive support ecosystem, including technical guidance and after-sales service.</li>
                           <li>Ensures availability of spare parts and localized maintenance solutions.</li>
-                          <li>Combines global manufacturing expertise with insights into the local agricultural market.</li>
-                          <li>Aims to empower farmers, contractors, and agribusinesses with modern machinery.</li>
-                          <li>Supports Pakistan's agricultural modernization, mechanization, and food security goals.</li>
-                          <li>Represents a new phase of regional growth, reinforcing YTO's mission to deliver dependable agricultural solutions and foster strong partnerships in Pakistan.</li>
                         </ul>
                       </li>
                     </ol>
@@ -151,12 +144,12 @@ export default function History() {
           </div>
           
           <div id="etw_sidebar">
-            <div className="etw_hometitle">About YTO</div>
+            <div className="etw_hometitle">YTO</div>
             <div id="etw_productlist">
               <ul>
-                <li><a href="/about">Company Profile</a></li>
-                <li><a href="/certificate">Certificates</a></li>
+                <li><a href="/about-yto">Company Profile</a></li>
                 <li><a href="/history" className="dq">History</a></li>
+                <li><a href="/capabilities">Capabilities</a></li>
               </ul>
               <div className="clearfix"></div>
             </div>

@@ -53,20 +53,35 @@ export default function Service() {
                   <li><img src="/images/ser03.png" alt="Reliably and precisely" /><span>Reliably and precisely</span></li>
                 </ul>
                 <div className="clearfix"></div>
-                <p>YTO has a global distribution network consisting of almost 90 service points, through which our products have been exported to over 100 countries and regions. Besides, we have established R&D and production bases in France, Belarus, Côte d'Ivoire, South Africa, etc. to empower us to quick response to customer needs, as well as provide them after-sales service reliably and precisely.</p>
-                <p>YTO provides its global dealers with EPC system for online ordering of spare parts (link: epc.yituochina.cn:9000).</p>
+                <p>YTO has a global distribution network consisting of almost 90 service points, through which our products have been exported to over 100 countries and regions. Besides, we have established R&D and production bases in France, Belarus, Côte d&apos;Ivoire, South Africa, etc. to empower us to quick response to customer needs, as well as provide them after-sales service reliably and precisely.</p>
+                <p>Pak Tractor Manufacturing Company PTMC, is the official authorized distributer of YTO Tractors in Pakistan. PTMC offers the complete range of service parts and support for YTO Tractors and machines through its extensive network of dealers across Pakistan.</p>
+
+                <div className="service-field-photos">
+                  <div className="protitle1"><span>Service in the field</span></div>
+                  <ul>
+                    <li>
+                      <img src="/images/service02.jpg" alt="YTO service and support" />
+                    </li>
+                    <li>
+                      <img src="/images/service01.jpg" alt="PTMC service capabilities" />
+                    </li>
+                    <li>
+                      <img src="/images/company.jpg" alt="PTMC and YTO support network" />
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="clearfix"></div>
             </div>
           </div>
           
           <div id="etw_sidebar">
-            <div className="etw_hometitle">About YTO</div>
+            <div className="etw_hometitle">YTO</div>
             <div id="etw_productlist">
               <ul>
-                <li><a href="/about">Company Profile</a></li>
-                <li><a href="/certificate">Certificates</a></li>
+                <li><a href="/about-yto">Company Profile</a></li>
                 <li><a href="/history">History</a></li>
+                <li><a href="/capabilities">Capabilities</a></li>
               </ul>
               <div className="clearfix"></div>
             </div>

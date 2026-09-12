@@ -20,7 +20,7 @@ export default function AboutYTO() {
           <div className="content">
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/about-yto">About YTO</a></li>
+              <li><a href="/about-yto">YTO</a></li>
               <li>Company Profile</li>
             </ul>
           </div>
@@ -47,13 +47,13 @@ export default function AboutYTO() {
                   <img src="/about/company.jpg" alt="About YTO" />
                 </div>
                 
-                <p>YTO Co., Ltd., or YTO, has committed to manufacturing agricultural machinery since 1955, such as, tractors, harvesting equipment, agricultural implements, diesel engines and generator sets. YTO is a major and long-standing agricultural machine manufacturer in China. Its predecessor, China First Tractor Company, was one of the 156 major projects outlined in the First Five-Year Plan (1953-57) and a giant in China&apos;s agricultural industry. After the reshuffle of tractor-related services, manufacturing, assets, liability and personnel, the YTO Co., Ltd. was established in 1997.</p>
+                <p>Pak Tractor Manufacturing Company (PTMC) is the culmination of over 60 years of experience in the agricultural machinery industry. Built to provide trusted and reliable machines to farmers of all sizes and variety, PTMC offers tractors ranging from 26 to 400 hp under the ATS TRACTOR and YTO brand names.</p>
                 
-                <p>YTO is a listed company that issues both A shares and H shares in the agricultural machinery industry. It got listed on the Hong Kong Stock Exchange on June 23, 1997 and began to issue H shares. On August 8, 2012, its shares started to be traded on the Shanghai Stock Exchange. The success in the stock market is partly contributed to our reliable products. We manufacture agricultural machinery in accordance with international standards and we are certified to ISO 9001, ISO 14001 and OHSAS 18001. With its quality products, YTO has been awarded as China&apos;s Quality Control Top Brand.</p>
+                <p>A part of the Wazir Pak Group, PTMC is a dynamic and forward-thinking organization dedicated to delivering high-quality agricultural machinery and engineering solutions across Pakistan and the region. With a strong commitment to innovation, reliability, and customer satisfaction, PTMC plays a vital role in supporting the country&apos;s agricultural and industrial development.</p>
                 
-                <p>YTO International Co., Ltd. (hereinafter referred as YTO International) was founded in 1995 as a subsidiary of the YTO Group. It is an international trading company that has been granted the self-managed import and export right by the Ministry of Commerce. YTO International is responsible for importing and exporting complete products, accessories and manufacturing technology provided by YTO.</p>
+                <p>Established with a vision to modernize farming practices, PTMC specializes in the distribution, support, and servicing of advanced machinery, including tractors, implements, and related equipment.</p>
                 
-                <p>Proud of nearly a hundred production lines, YTO enjoys strong production capacity of forging, processing, assembly and testing. It specializes in Dongfanghong series of crawler tractors, wheeled tractors, diesel engines, harvesting equipment and agricultural machinery. Global service network provides strong services and supports to foreign clients. Thanks to the continuous development of machines and accessories and the professional service team, YTO has seen a long-term exporting success with stable sales volume.</p>
+                <p>PTMC is the authorized distributor of YTO tractors in Pakistan, offering the full range of YTO tractors and implements along with complete spares and service support.</p>
                 
                 <ul className="text_item mb-4">
                   <li>
@@ -133,7 +133,7 @@ export default function AboutYTO() {
           
           {/* Sidebar */}
           <div id="etw_sidebar">
-            <div className="etw_hometitle">About YTO</div>
+            <div className="etw_hometitle">YTO</div>
             <div id="etw_productlist">
               <ul>
                 <li><a href="/about-yto" className="dq">Company Profile</a></li>

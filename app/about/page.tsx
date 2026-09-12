@@ -14,7 +14,7 @@ export default function About() {
           <div className="content">
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About PTMC</a></li>
+              <li><a href="/about">PTMC</a></li>
               <li>Company Profile</li>
             </ul>
           </div>
@@ -40,13 +40,11 @@ export default function About() {
                   <img src="/about/company.jpg" alt="About PTMC" />
                 </div>
                 
-                <p>PTMC (Pak Tractor Manufacturing Company) is a dynamic and forward-thinking organization dedicated to delivering high-quality agricultural machinery and engineering solutions across Pakistan. With a strong commitment to innovation, reliability, and customer satisfaction, PTMC plays a vital role in supporting the country&apos;s agricultural and industrial development.</p>
+                <p>Pak Tractor Manufacturing Company (PTMC) is a trusted provider of high-quality tractors designed to meet the evolving needs of modern agriculture and industry.</p>
                 
-                <p>Established with a vision to modernize farming practices, PTMC specializes in the distribution, support, and servicing of advanced machinery, including tractors, implements, and related equipment. The company works closely with globally recognized manufacturers to ensure that customers receive durable, efficient, and cost-effective solutions tailored to local needs.</p>
+                <p>With a strong commitment to performance, durability, innovation, and service PTMC delivers reliable machinery built to perform in the toughest conditions.</p>
                 
-                <p>At PTMC, quality and performance are at the core of every operation. The company emphasizes strict standards in product selection, technical support, and after-sales service. Its team of skilled professionals ensures that clients receive expert guidance, timely maintenance, and reliable spare parts availability.</p>
-                
-                <p>Driven by integrity and long-term partnerships, PTMC continues to expand its footprint by building trust with farmers, contractors, and businesses nationwide. The company&apos;s mission is to empower its customers with modern technology, enhance productivity, and contribute to the sustainable growth of Pakistan&apos;s agricultural sector.</p>
+                <p>Our range of tractors spans 26 to 400 hp power output with allied implements and equipment to make your farming the most efficient it can be.</p>
                 
                 {/* Vision & Mission Section */}
                 <div className="etw_hometitle mt-4">
@@ -143,12 +141,10 @@ export default function About() {
           
           {/* Sidebar */}
           <div id="etw_sidebar">
-            <div className="etw_hometitle">About PTMC</div>
+            <div className="etw_hometitle">PTMC</div>
             <div id="etw_productlist">
               <ul>
                 <li><a href="/about" className="dq">Company Profile</a></li>
-                <li><a href="/certificate">Certificates</a></li>
-                <li><a href="/partners">Our Partners</a></li>
               </ul>
               <div className="clearfix"></div>
             </div>

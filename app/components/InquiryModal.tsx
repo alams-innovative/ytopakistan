@@ -6,9 +6,10 @@ interface InquiryModalProps {
   isOpen: boolean;
   onClose: () => void;
   productName?: string;
+  selectedOptions?: string[];
 }
 
-export default function InquiryModal({ isOpen, onClose, productName }: InquiryModalProps) {
+export default function InquiryModal({ isOpen, onClose, productName, selectedOptions = [] }: InquiryModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
@@ -95,7 +96,7 @@ export default function InquiryModal({ isOpen, onClose, productName }: InquiryMo
                 {submitMessage.text}
               </div>
             )}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} key={selectedOptions.join('|')}>
               <div className="form-group">
                 <label>E-mail*</label>
                 <input type="email" name="email" className="form-control" required />
@@ -128,7 +129,17 @@ export default function InquiryModal({ isOpen, onClose, productName }: InquiryMo
               
               <div className="form-group">
                 <label>Message*</label>
-                <textarea name="message" className="form-control" rows={3} required></textarea>
+                <textarea
+                  name="message"
+                  className="form-control"
+                  rows={3}
+                  required
+                  defaultValue={
+                    selectedOptions.length
+                      ? `I am interested in ${productName || 'this tractor'}. Please also include: ${selectedOptions.join(', ')}.`
+                      : ''
+                  }
+                ></textarea>
               </div>
               
               {productName && (

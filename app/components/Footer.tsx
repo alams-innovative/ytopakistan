@@ -1,15 +1,22 @@
+import { TRACTORS } from '../../lib/tractors';
+
 export default function Footer() {
   return (
     <>
       {/* Bottom Section */}
       <div id="etw_bottom">
         <div className="content">
+          <div className="footer-logo-row">
+            <img src="/logo2.png" alt="YTO" className="footer-logo-yto" />
+            <img
+              src="/images/ptmc-logo-transparent.png"
+              alt="Pak Tractor Manufacturing Company"
+              className="footer-logo-ptmc"
+            />
+          </div>
           <div className="row">
             <div className="col-12 col-lg-4">
               <div className="bottom_logo">
-                <div className="footer-logo-top">
-                  <img src="/logo2.png" alt="YTO" className="footer-logo-yto" />
-                </div>
                 <div className="contact_info">
                   <p><strong>Address:</strong><br />
                   16 km, Multan Road, Pakka Mile Stop,<br />
@@ -36,21 +43,16 @@ export default function Footer() {
             </div>
             <div className="col-12 col-md-6 col-lg-6">
               <div className="pro_contact">
-                <div className="footer-products-heading-row">
-                  <div className="footer-products-text-block">
-                    <div className="etw_hometitle">
-                      <a href="/products">Products</a>
-                    </div>
-                    <ul>
-                      <li><a href="/5-tractors">Tractors</a></li>
-                    </ul>
-                  </div>
-                  <img
-                    src="/images/ptmc-logo-transparent.png"
-                    alt="Pak Tractor Manufacturing Company"
-                    className="footer-products-ptmc-logo"
-                  />
+                <div className="etw_hometitle">
+                  <a href="/products">Products</a>
                 </div>
+                <ul className="footer-tractor-links">
+                  {TRACTORS.map((tractor) => (
+                    <li key={tractor.href}>
+                      <a href={tractor.href}>{tractor.name}</a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -63,11 +65,12 @@ export default function Footer() {
       <div id="footer">
         <div id="etw_homefooter">
           <div className="content">
-            <a href="/about">About YTO</a>
+            <a href="/about-yto">YTO</a>
+            <a href="/about">PTMC</a>
             <a href="/products">Products</a>
             <a href="/capabilities">Capabilities</a>
             <a href="/service">Service & Support</a>
-            <a href="/video">Videos</a>
+            <a href="/gallery">Gallery</a>
             <a href="/contact">Contact</a>
           </div>
           <div className="content" style={{ textAlign: 'center', paddingTop: '1rem', borderTop: '1px solid #e0e0e0', marginTop: '1rem' }}>
